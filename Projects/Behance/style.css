@@ -1,0 +1,182 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fdfdfe;
+}
+
+@font-face {
+  font-family: Aper;
+  src: url(../../Fonts/ApercuPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: AperMed;
+  src: url(../../Fonts/ApercuPro-Medium.ttf);
+}
+
+#container {
+  margin: 0 auto;
+}
+
+.header {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #080808;
+  width: 100%;
+  height: 12vh;
+  /* position: fixed; */
+}
+
+.logo {
+  float: left;
+  color: #faf9fe;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #faf9fe;
+}
+
+.nav {
+  float: right;
+}
+
+#title_back {
+  display: block;
+  clear: both;
+  background: #080808;
+  /* background-color: green; */
+  width: 100%;
+}
+
+#title {
+  padding: 6% 0 2% 10%;
+  font-family: Aper;
+  font-size: 2.3vw;
+  color: #faf9fe;
+}
+
+#duration {
+  font-family: Aper;
+  font-weight: 100;
+  color: #535353;
+  padding: 0 0 6% 10%;
+}
+
+#title_image {
+  background: url(../../images/1920/2.png);
+  background-attachment: fixed;
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#desc_container {
+  width: 100%;
+}
+
+#desc_title {
+  display: block;
+  font-family: AperMed;
+  padding: 10% 10% 0 10%;
+  font-size: 1.6vw;
+}
+#desc {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 10%;
+  color: #080808b6;
+}
+
+#proc_container {
+  float: left;
+  display: block;
+  margin: 1% 0 0 10%;
+  width: 90%;
+  height: max-content;
+}
+
+#proc_title {
+  display: block;
+  font-family: AperMed;
+  padding: 10% 0 0 0;
+  font-size: 1.6vw;
+}
+#user {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+  color: #080808b6;
+}
+
+#user_pic {
+  height: 90%;
+  width: 100%;
+  background: url(Pictures/User-01.png);
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+#probs {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+  color: #080808b6;
+}
+
+#prob_pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4%;
+  width: 90%;
+  max-height: 70%;
+}
+
+#out_container {
+  float: left;
+  display: block;
+  margin: 1% 0 0 10%;
+  width: 90%;
+  height: max-content;
+}
+
+#out_title {
+  display: block;
+  font-family: AperMed;
+  padding: 10% 0 0 0;
+  font-size: 1.6vw;
+}
+
+#outcome {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+  color: #080808b6;
+}
+
+#redun {
+  background: url(Pictures/final/1_1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 90%;
+}

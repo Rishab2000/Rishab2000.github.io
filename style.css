@@ -1,0 +1,727 @@
+/* css rules
+selectors ==== for example H1{}
+decleration block ==== {} 
+declaration
+property: value;
+
+GENRAL RULES
+ID === #id_name (unique)
+
+Class === .class_name (can be resused)
+
+DIV ==== div, not inline, block level elment (groups elements under the tag)
+
+SPAN ==== span, inline element (groups elements under the tag)
+
+INHERITANCE the parent style will be inherited by the children element, will work until the child element doesn't have a style
+
+LAST RULE AND SPECIFICITY applies the last style and ignores the first one
+
+Universal selector ===== * (least amoint specificity)
+
+Relative percentages depend on the parent element  
+
+em values = relative and depends on the parent 
+
+1em = 16px (default browser styles)
+
+rem = relative depends on root (html{value = root size}
+1 rem = 16px
+
+vh = height = percentage of the screen
+
+vw = width = percentage of the screen
+
+typograpgy - line-height, letter-spacing, text-transform, word-spacing, text-decoration
+
+Colours 
+#ff0047
+#ff4674
+*/
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fdfdfe;
+}
+
+@font-face {
+  font-family: Aper;
+  src: url(Fonts/ApercuPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: AperMed;
+  src: url(Fonts/ApercuPro-Medium.ttf);
+}
+
+#container {
+  margin: 0 auto;
+}
+
+.header {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #080808;
+  width: 100%;
+  height: 12vh;
+  /* position: fixed; */
+}
+
+.logo {
+  float: left;
+  color: #faf9fe;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.top {
+  text-decoration: none;
+  color: #faf9fe;
+}
+
+.nav {
+  float: right;
+}
+
+.buttonlink {
+  text-decoration: none;
+  color: #ff2d55;
+}
+
+li {
+  list-style: none;
+  float: left;
+  margin-right: 50px;
+  padding-top: 17px;
+}
+
+.background {
+  display: block;
+  clear: both;
+  background: #080808;
+  width: 100%;
+  height: 100vh;
+}
+
+#intro_text1 {
+  display: block;
+  margin-left: 10%;
+  padding-top: 20vh;
+  font-family: Aper;
+  font-weight: 100;
+  color: #faf9fe;
+  /* position: absolute; */
+}
+
+#intro_text2 {
+  font-family: Aper;
+  font-size: 3vw;
+  color: #faf9fe;
+  margin-left: 10%;
+  padding-right: 1%;
+  padding-top: 5vh;
+  clear: both;
+}
+
+.project1 {
+  margin-top: 10vh;
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+#image1 {
+  float: left;
+  width: 60%;
+  height: 100vh;
+  background: url("images/1920/2.png");
+  background-size: cover;
+  background-position: 51% 0px;
+  background-repeat: no-repeat;
+}
+
+#container1 {
+  float: right;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#text1 {
+  font-family: AperMed;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2vw;
+  padding: 0px 10vw 0px;
+  color: rgba(0, 0, 0, 0.863);
+}
+
+#desc1 {
+  text-align: left;
+  font-family: Aper;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 10% 10vw 0px;
+  font-size: 1.3vw;
+  color: #727272;
+}
+
+#button1 {
+  align-self: flex-start;
+  text-align: right;
+  border-style: solid;
+  border-width: medium;
+  padding: 4vh 3vh;
+  /* background-color: darkblue; */
+  width: 4.5vh;
+  margin: 10% 10vw;
+  text-decoration: none;
+  color: #ff2d55;
+  font-family: Aper;
+  /* padding-right: 15%; */
+  font-size: 1vw;
+}
+
+.project2 {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+#image2 {
+  float: right;
+  width: 40%;
+  height: 100vh;
+  background: url("images/Iphone Mockup.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -13.8vw 0px;
+}
+
+#container2 {
+  float: left;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#text2 {
+  font-family: AperMed;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2vw;
+  padding: 0px 28% 0px;
+  color: rgba(0, 0, 0, 0.863);
+}
+
+#desc2 {
+  text-align: left;
+  font-family: Aper;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 6% 38% 0px 28%;
+  font-size: 1.3vw;
+  color: #727272;
+}
+
+#button2 {
+  align-self: flex-start;
+  text-align: right;
+  border-style: solid;
+  border-width: medium;
+  padding: 4vh 3vh;
+  width: 4.5vh;
+  margin: 6.4% 28.2%;
+  color: #ff2d55;
+  font-family: Aper;
+  /* padding-right: 15%; */
+  font-size: 1vw;
+}
+
+.project3 {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+#image3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  float: left;
+  width: 60%;
+  height: 100vh;
+  background: url("images/1920/chiral2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -14.3vw;
+}
+
+#container3 {
+  float: right;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#text3 {
+  font-family: AperMed;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2vw;
+  padding: 0px 10vw 0px;
+  color: rgba(0, 0, 0, 0.863);
+}
+
+#desc3 {
+  text-align: left;
+  font-family: Aper;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 10% 10vw 0px;
+  font-size: 1.3vw;
+  color: #727272;
+}
+
+#button3 {
+  align-self: flex-start;
+  text-align: right;
+  border-style: solid;
+  border-width: medium;
+  padding: 4vh 3vh;
+  width: 4.5vh;
+  margin: 10% 10vw;
+  color: #ff2d55;
+  font-family: Aper;
+  /* padding-right: 15%; */
+  font-size: 1vw;
+}
+
+.project4 {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+#image4 {
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  float: right;
+  width: 40%;
+  height: 100vh;
+  background: url("images/iPhone\ X_MockUp2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -14.3vw;
+}
+
+#container4 {
+  float: left;
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#text4 {
+  font-family: AperMed;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2vw;
+  padding: 0px 16vw 0px 16.45vw;
+  color: rgba(0, 0, 0, 0.863);
+}
+
+#desc4 {
+  text-align: left;
+  font-family: Aper;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 6% 38% 0px 28%;
+  font-size: 1.3vw;
+  color: #727272;
+}
+
+#button4 {
+  align-self: flex-start;
+  text-align: right;
+  border-style: solid;
+  border-width: medium;
+  padding: 4vh 3vh;
+  width: 4.5vh;
+  margin: 6.4% 28.2%;
+  color: #ff2d55;
+  font-family: Aper;
+  /* padding-right: 15%; */
+  font-size: 1vw;
+}
+
+.project5 {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+#image5 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  float: left;
+  width: 60%;
+  height: 100vh;
+  background: url("images/1920/Web4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -14.3vw;
+}
+
+#container5 {
+  float: right;
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#text5 {
+  font-family: AperMed;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2vw;
+  padding: 0px 10vw 0px;
+  color: rgba(0, 0, 0, 0.863);
+}
+
+#desc5 {
+  text-align: left;
+  font-family: Aper;
+  font-weight: normal;
+  line-height: 1.5;
+  padding: 10% 10vw 0px;
+  font-size: 1.3vw;
+  color: #727272;
+}
+
+#button5 {
+  align-self: flex-start;
+  text-align: right;
+  border-style: solid;
+  border-width: medium;
+  padding: 4vh 3vh;
+  width: 4.5vh;
+  margin: 10% 10vw;
+  color: #ff2d55;
+  font-family: Aper;
+  /* padding-right: 15%; */
+  font-size: 1vw;
+}
+
+@media only screen and (max-width: 965px) {
+  .project4 {
+    display: none;
+  }
+  #image1 {
+    width: 100%;
+    height: 100vh;
+    background: url("images/1920/2.png");
+    background-size: cover;
+    background-position: 51% 0px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  #container1 {
+    width: 100%;
+    height: 50%;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12%;
+  }
+
+  #text1 {
+    font-family: AperMed;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 5vw;
+    padding: 0px 10% 0px;
+    color: rgba(0, 0, 0, 0.863);
+  }
+
+  #desc1 {
+    text-align: left;
+    font-family: Aper;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 10% 16% 0px 10%;
+    font-size: 2.7vw;
+    color: #727272;
+  }
+
+  #button1 {
+    align-self: flex-start;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    padding: 4% 2.5%;
+    width: 4.5%;
+    margin: 10% 10%;
+    color: #ff2d55;
+    font-family: Aper;
+    /* padding-right: 15%; */
+    font-size: 1.4vw;
+  }
+
+  .project2 {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #image2 {
+    float: right;
+    width: 100%;
+    height: 100vh;
+    background: url("images/Iphone Mockup.jpg");
+    /* margin-top: 13%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% 0px;
+  }
+
+  #container2 {
+    width: 100%;
+    height: 50%;
+    padding-top: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12%;
+  }
+
+  #text2 {
+    font-family: AperMed;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 5vw;
+    padding: 0px 10% 0px;
+    color: rgba(0, 0, 0, 0.863);
+  }
+
+  #desc2 {
+    text-align: left;
+    font-family: Aper;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 10% 16% 0px 10%;
+    font-size: 2.7vw;
+    color: #727272;
+  }
+
+  #button2 {
+    align-self: flex-start;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    padding: 4% 2.5%;
+    width: 4.5%;
+    margin: 10% 10%;
+    color: #ff2d55;
+    font-family: Aper;
+    /* padding-right: 15%; */
+    font-size: 1.4vw;
+  }
+
+  .project3 {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #image3 {
+    float: right;
+    width: 100%;
+    height: 100vh;
+    background: url("images/1920/chiral2.png");
+    /* margin-top: 13%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 53% 0px;
+  }
+
+  #container3 {
+    width: 100%;
+    height: 50%;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12%;
+  }
+
+  #text3 {
+    font-family: AperMed;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 5vw;
+    padding: 0px 10% 0px;
+    color: rgba(0, 0, 0, 0.863);
+  }
+
+  #desc3 {
+    text-align: left;
+    font-family: Aper;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 10% 16% 0px 10%;
+    font-size: 2.7vw;
+    color: #727272;
+  }
+
+  #button3 {
+    align-self: flex-start;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    padding: 4% 2.5%;
+    width: 4.5%;
+    margin: 10% 10%;
+    color: #ff2d55;
+    font-family: Aper;
+    /* padding-right: 15%; */
+    font-size: 1.4vw;
+  }
+
+  .project4 {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #image4 {
+    float: right;
+    width: 100%;
+    height: 100vh;
+    background: url("images/iPhone\ X_MockUp2.png");
+    /* margin-top: 13%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% 0px;
+  }
+
+  #container4 {
+    width: 100%;
+    height: 50%;
+    padding-top: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12%;
+  }
+
+  #text4 {
+    font-family: AperMed;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 5vw;
+    padding: 0px 10% 0px;
+    color: rgba(0, 0, 0, 0.863);
+  }
+
+  #desc4 {
+    text-align: left;
+    font-family: Aper;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 10% 16% 0px 10%;
+    font-size: 2.7vw;
+    color: #727272;
+  }
+
+  #button4 {
+    align-self: flex-start;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    padding: 4% 2.5%;
+    width: 4.5%;
+    margin: 10% 10%;
+    color: #ff2d55;
+    font-family: Aper;
+    /* padding-right: 15%; */
+    font-size: 1.4vw;
+  }
+
+  .project5 {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #image5 {
+    float: right;
+    width: 100%;
+    height: 100vh;
+    background: url("images/1920/Web4.png");
+    /* margin-top: 13%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 0px;
+  }
+
+  #container5 {
+    width: 100%;
+    height: 50%;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12%;
+  }
+
+  #text5 {
+    font-family: AperMed;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 5vw;
+    padding: 0px 10% 0px;
+    color: rgba(0, 0, 0, 0.863);
+  }
+
+  #desc5 {
+    text-align: left;
+    font-family: Aper;
+    font-weight: normal;
+    line-height: 1.5;
+    padding: 10% 16% 0px 10%;
+    font-size: 2.7vw;
+    color: #727272;
+  }
+
+  #button5 {
+    align-self: flex-start;
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    padding: 4% 2.5%;
+    width: 4.5%;
+    margin: 10% 10%;
+    color: #ff2d55;
+    font-family: Aper;
+    /* padding-right: 15%; */
+    font-size: 1.4vw;
+  }
+}

@@ -16,6 +16,11 @@ body {
   src: url(../../Fonts/ApercuPro-Medium.ttf);
 }
 
+@font-face {
+  font-family: AperBol;
+  src: url(../../Fonts/ApercuPro-Bold.ttf);
+}
+
 #container {
   margin: 0 auto;
 }
@@ -82,7 +87,7 @@ a {
 
 #desc_title {
   display: block;
-  font-family: AperMed;
+  font-family: AperBol;
   padding: 10% 10% 0 10%;
   font-size: 1.6vw;
 }
@@ -106,7 +111,7 @@ a {
 
 #proc_title {
   display: block;
-  font-family: AperMed;
+  font-family: AperBol;
   padding: 10% 0 0 0;
   font-size: 1.6vw;
 }
@@ -158,25 +163,157 @@ a {
 
 #out_title {
   display: block;
-  font-family: AperMed;
+  font-family: AperBol;
   padding: 10% 0 0 0;
   font-size: 1.6vw;
 }
 
-#outcome {
+#outcome1 {
+  color: #ff4674;
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+}
+
+#redun_image {
+  background: url(Pictures/final/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 5% 0;
+  height: 70vh;
+  width: 90%;
+  margin: 5% 0 3% 0;
+}
+
+#redun_des {
   display: block;
   font-family: Aper;
   font-weight: 400;
   font-size: 1.2vw;
   line-height: 1.6;
-  padding: 2% 40% 0 0;
+  padding: 0% 40% 0 0;
   color: #080808b6;
+  margin-bottom: 12%;
 }
 
-#redun {
-  background: url(Pictures/final/1_1.png);
+#outcome2 {
+  color: #ff4674;
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+}
+
+#focus_image {
+  background: url(Pictures/final/2.png);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 58vh;
   width: 90%;
+  margin: 5% 0 3% 0;
+}
+
+#focus_des {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 0% 40% 0 0;
+  color: #080808b6;
+  margin-bottom: 12%;
+}
+
+#outcome3 {
+  color: #ff4674;
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+}
+
+#ocum_image {
+  background: url(Pictures/final/3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 58vh;
+  width: 90%;
+  margin: 5% 0 3% 0;
+}
+
+#ocum_des {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 0% 40% 0 0;
+  color: #080808b6;
+  margin-bottom: 12%;
+}
+
+#outcome4 {
+  color: #ff4674;
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+}
+
+#sam_image {
+  background: url(Pictures/final/4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 58vh;
+  width: 90%;
+  margin: 5% 0 3% 0;
+}
+
+#sam_des {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 0% 40% 0 0;
+  color: #080808b6;
+  margin-bottom: 12%;
+}
+
+#outcome5 {
+  color: #ff4674;
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+}
+
+#new_image {
+  background: url(Pictures/final/5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 58vh;
+  width: 90%;
+  margin: 5% 0 3% 0;
+}
+
+#new_des {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 0% 40% 0 0;
+  color: #080808b6;
 }

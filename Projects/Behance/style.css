@@ -182,10 +182,9 @@ a {
   background: url(Pictures/final/1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 5% 0;
-  height: 70vh;
+  height: 68vh;
   width: 90%;
-  margin: 5% 0 3% 0;
+  margin-bottom: 7%;
 }
 
 #redun_des {
@@ -196,7 +195,7 @@ a {
   line-height: 1.6;
   padding: 0% 40% 0 0;
   color: #080808b6;
-  margin-bottom: 12%;
+  margin-bottom: 4%;
 }
 
 #outcome2 {
@@ -215,7 +214,7 @@ a {
   background-repeat: no-repeat;
   height: 58vh;
   width: 90%;
-  margin: 5% 0 3% 0;
+  margin-bottom: 7%;
 }
 
 #focus_des {
@@ -226,7 +225,7 @@ a {
   line-height: 1.6;
   padding: 0% 40% 0 0;
   color: #080808b6;
-  margin-bottom: 12%;
+  margin-bottom: 4%;
 }
 
 #outcome3 {
@@ -245,7 +244,7 @@ a {
   background-repeat: no-repeat;
   height: 58vh;
   width: 90%;
-  margin: 5% 0 3% 0;
+  margin-bottom: 7%;
 }
 
 #ocum_des {
@@ -256,7 +255,7 @@ a {
   line-height: 1.6;
   padding: 0% 40% 0 0;
   color: #080808b6;
-  margin-bottom: 12%;
+  margin-bottom: 4%;
 }
 
 #outcome4 {
@@ -275,7 +274,7 @@ a {
   background-repeat: no-repeat;
   height: 58vh;
   width: 90%;
-  margin: 5% 0 3% 0;
+  margin-bottom: 7%;
 }
 
 #sam_des {
@@ -286,7 +285,7 @@ a {
   line-height: 1.6;
   padding: 0% 40% 0 0;
   color: #080808b6;
-  margin-bottom: 12%;
+  margin-bottom: 4%;
 }
 
 #outcome5 {
@@ -305,7 +304,7 @@ a {
   background-repeat: no-repeat;
   height: 58vh;
   width: 90%;
-  margin: 5% 0 3% 0;
+  margin-bottom: 7%;
 }
 
 #new_des {
@@ -316,4 +315,5 @@ a {
   line-height: 1.6;
   padding: 0% 40% 0 0;
   color: #080808b6;
+  margin-bottom: 4%;
 }

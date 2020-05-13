@@ -1,0 +1,11 @@
+#container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 50vh;
+  background-color: blueviolet;
+}
+
+#one {
+}

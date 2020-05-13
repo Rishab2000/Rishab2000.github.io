@@ -1,9 +1,10 @@
 body {
   width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #fdfdfe;
+  background: #faf9fe;
 }
 
 @font-face {
@@ -83,6 +84,7 @@ a {
 
 #desc_container {
   width: 100%;
+  height: 100%;
 }
 
 #desc_title {
@@ -106,7 +108,7 @@ a {
   display: block;
   margin: 1% 0 0 10%;
   width: 90%;
-  height: max-content;
+  height: 100%;
 }
 
 #proc_title {
@@ -126,7 +128,7 @@ a {
 }
 
 #user_pic {
-  height: 90%;
+  height: 90vh;
   width: 100%;
   background: url(Pictures/User-01.png);
   background-size: contain;
@@ -142,6 +144,112 @@ a {
   line-height: 1.6;
   padding: 2% 40% 0 0;
   color: #080808b6;
+  height: max-content;
+}
+
+#cards_container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  align-content: center;
+}
+
+#one {
+  margin: 1%;
+  width: 40%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#one_image_container {
+  height: 100%;
+  width: 30%;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+#one_text_container {
+  /*   padding:auto; */
+  font-family: open sans;
+  font-size: 1vw;
+  width: 70%;
+  height: 100%;
+}
+
+#one_text {
+  margin: 15%;
+}
+
+#one_image {
+  background: url(Icons/confusion.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 1px solid red; */
+  height: 40%;
+  width: 40%;
+  margin-top: 39%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#two {
+  margin: 1%;
+  width: 40%;
+  height: 40%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+  display: flex;
+  flex-flow: row nowrap;
+}
+#two_image_container {
+  height: 100%;
+  width: 30%;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+#two_text_container {
+  /*   padding:auto; */
+  font-family: open sans;
+  font-size: 1vw;
+  width: 70%;
+  height: 100%;
+}
+
+#two_text {
+  margin: 10%;
+}
+
+#two_image {
+  background: url(Icons/Grouping.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 1px solid red; */
+  height: 40%;
+  width: 40%;
+  margin-top: 39%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#three {
+  margin: 1%;
+  width: 40%;
+  height: 40%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+}
+
+#four {
+  margin: 1%;
+  width: 40%;
+  height: 40%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
 }
 
 #prob_pics {

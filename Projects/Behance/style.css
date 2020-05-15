@@ -382,8 +382,8 @@ a {
   margin: 1%;
   width: 40%;
   height: 40%;
-  box-shadow: 0 5px 10px rgba(255, 45, 85, 0.01),
-    0 15px 40px rgba(255, 45, 83, 0.057);
+  box-shadow:0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
   display: flex;
   flex-flow: row nowrap;
 }
@@ -420,8 +420,8 @@ a {
   margin: 1%;
   width: 40%;
   height: 40%;
-  box-shadow: 0 5px 10px rgba(255, 45, 85, 0.01),
-    0 15px 40px rgba(255, 45, 85, 0.057);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
   display: flex;
   flex-flow: row nowrap;
 }

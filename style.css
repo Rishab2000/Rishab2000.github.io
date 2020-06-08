@@ -85,12 +85,7 @@ body {
   float: right;
 }
 
-.buttonlink {
-  text-decoration: none;
-  color: #ff2d55;
-}
-
-li {
+.nav_list {
   list-style: none;
   float: left;
   margin-right: 50px;

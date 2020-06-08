@@ -1,11 +1,514 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #faf9fe;
+}
+
+@font-face {
+  font-family: Aper;
+  src: url(../../Fonts/ApercuPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: AperMed;
+  src: url(../../Fonts/ApercuPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: AperBol;
+  src: url(../../Fonts/ApercuPro-Bold.ttf);
+}
+
+@font-face {
+  font-family: AperL;
+  src: url(../../Fonts/ApercuPro-Light.ttf);
+}
+
 #container {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
+  margin: 0 auto;
+}
+
+.header {
+  display: block;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #080808f6;
+  width: 100%;
+  height: 12vh;
+  /* position: fixed; */
+}
+
+.logo {
+  float: left;
+  color: #faf9fe;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #faf9fe;
+}
+
+.nav_list {
+  list-style: none;
+  float: left;
+  margin-right: 50px;
+  padding-top: 8px;
+}
+
+.nav {
+  float: right;
+}
+
+#title_back {
+  display: block;
+  clear: both;
+  background: #080808;
+  /* background-color: green; */
+  width: 100%;
+}
+
+#title {
+  padding: 6% 0 2% 10%;
+  font-family: Aper;
+  font-size: 2.3vw;
+  color: #faf9fe;
+}
+
+#duration {
+  font-family: Aper;
+  font-weight: 100;
+  color: #535353;
+  padding: 0 0 6% 10%;
+}
+
+#title_image {
+  background: url(../../images/1920/chiral2.png);
+  background-attachment: fixed;
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+#desc_container {
+  width: 100%;
+  height: fit-content;
+}
+
+#desc_title {
+  display: block;
+  font-family: AperBol;
+  padding: 10% 10% 0 10%;
+  font-size: 1.6vw;
+}
+
+#desc {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 10%;
+  color: #080808b6;
+}
+
+#index_container {
   width: 50%;
-  height: 50vh;
-  background-color: blueviolet;
+  height: 20vh;
+  margin: 5% 40% 0 10%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: #080808b6;
+}
+
+#discover {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#discover_icon {
+  height: 50%;
+  width: 50%;
+  padding-top: 7%;
+  background: url(Icons/Discover.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#discover_text {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  font-family: Aper;
+  font-size: 1vw;
+}
+#arrow1 {
+  width: 6.25%;
+  height: 50px;
+}
+#empathize {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#empathize_icon {
+  height: 50%;
+  width: 50%;
+  background: url(Icons/Empathize.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#empathize_text {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  font-family: Aper;
+  font-size: 1vw;
+}
+#arrow2 {
+  width: 6.25%;
+  height: 50px;
+}
+#ideate {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#ideate_icon {
+  height: 50%;
+  width: 50%;
+  background: url(Icons/ideate.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#ideate_text {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  font-family: Aper;
+  font-size: 1vw;
+}
+#arrow3 {
+  width: 6.25%;
+  height: 50px;
+}
+#prototype {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#prototype_icon {
+  height: 50%;
+  width: 47%;
+  background: url(Icons/Prototype.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#prototype_text {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  font-family: Aper;
+  font-size: 1vw;
+}
+#arrow4 {
+  width: 6.25%;
+  height: 50%;
+}
+#testing {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#testing_icon {
+  height: 50%;
+  width: 50%;
+  background: url(Icons/testing.png) no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#testing_text {
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  font-family: Aper;
+  font-size: 1vw;
+}
+
+#proc_container {
+  float: left;
+  display: block;
+  margin: 1% 0 0 10%;
+  width: 90%;
+  height: 100%;
+}
+
+#proc_title {
+  display: block;
+  font-family: AperBol;
+  padding: 5% 0 0 0;
+  font-size: 1.6vw;
+}
+
+#discovery {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+  color: #080808b6;
+  margin-bottom: 5%;
+}
+
+#discovery_pic{
+  background: url(Discovery.png);
+  width: 100%;
+  height: 60vh;
+  margin: 3vh 0;
+  background-size: contain;
+  background-position: center;
+  display: block;
+}
+
+#discovery::after{
+  content: "-Synthezing data points and futher connecting the dots through affinity mapping- ";
+  display: block;
+  font-family: Aper;
+  font-size: 0.7vw;
+  text-align: center;
+}
+
+#questions_pic {
+  height: 60vh;
+  width: 80%;
+  margin: 3vh 0;
+  background: url(questions.png);
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+#finding {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+  color: #080808b6;
+  margin-bottom: 3%;
+}
+
+#key_discovery {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+  color: #080808b6;
+}
+
+#cards_container {
+  margin: 7% auto 10% auto;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  align-content: center;
 }
 
 #one {
+  margin: 2%;
+  width: 40%;
+  height: 50%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#one_image_container {
+  height: 100%;
+  width: 30%;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+#one_text_container {
+  /*   padding:auto; */
+  font-family: Aper;
+  font-size: 1vw;
+  width: 70%;
+  height: 100%;
+}
+
+#one_text {
+  margin: 17% 0 0 0;
+}
+
+#one_image {
+  background: url(Icons/tree.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 1px solid red; */
+  height: 40%;
+  width: 40%;
+  margin-top: 47%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#two {
+  margin: 2%;
+  width: 40%;
+  height: 50%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#two_image_container {
+  height: 100%;
+  width: 30%;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+#two_text_container {
+  /*   padding:auto; */
+  font-family: Aper;
+  font-size: 1vw;
+  width: 70%;
+  height: 100%;
+}
+
+#two_text {
+  margin: 11% 7% 0 0;
+}
+
+#two_image {
+  background: url(Icons/Oxygen.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 1px solid red; */
+  height: 50%;
+  width: 50%;
+  margin-top: 54%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#three {
+  margin: 2%;
+  width: 40%;
+  height: 50%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+  display: flex;
+  flex-flow: row nowrap;
+
+}
+
+#three_image_container {
+  height: 100%;
+  width: 30%;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+#three_text_container {
+  /*   padding:auto; */
+  font-family: Aper;
+  font-size: 1vw;
+  width: 70%;
+  height: 100%;
+}
+
+#three_text {
+  margin: 17% 10% 0 0;
+}
+
+#three_image {
+  background: url(Icons/Ocean.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 1px solid red; */
+  height: 50%;
+  width: 50%;
+  margin: 54% auto;
+}
+
+#four {
+  margin: 2%;
+  width: 40%;
+  height: 50%;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#four_image_container {
+  height: 100%;
+  width: 30%;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+#four_text_container {
+  /*   padding:auto; */
+  font-family: Aper;
+  font-size: 1vw;
+  width: 70%;
+  height: 100%;
+}
+
+#four_text {
+  margin: 17% 10% 17% 0;
+}
+
+#four_image {
+  background: url(Icons/Temperature-01.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 1px solid red; */
+  height: 50%;
+  width: 50%;
+  margin: 47% auto;
+}
+
+#prob_pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4%;
+  width: 90%;
+  max-height: 70%;
+}
+
+#Empathize {
+  display: block;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
+  padding: 2% 40% 0 0;
+  color: #080808b6;
+  height: max-content;
 }

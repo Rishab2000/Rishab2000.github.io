@@ -117,12 +117,14 @@ a {
 }
 
 #index_container {
-  width: 50%;
+  width: 65%;
   height: 20vh;
   margin: 5% 40% 0 10%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  font-family: Aper;
+  font-size: 1.3vw;
   color: #080808b6;
 }
 
@@ -146,8 +148,6 @@ a {
   text-align: center;
   margin: auto;
   width: fit-content;
-  font-family: Aper;
-  font-size: 1vw;
 }
 #arrow1 {
   width: 6.25%;
@@ -171,8 +171,6 @@ a {
   text-align: center;
   margin: auto;
   width: fit-content;
-  font-family: Aper;
-  font-size: 1vw;
 }
 #arrow2 {
   width: 6.25%;
@@ -196,8 +194,6 @@ a {
   text-align: center;
   margin: auto;
   width: fit-content;
-  font-family: Aper;
-  font-size: 1vw;
 }
 #arrow3 {
   width: 6.25%;
@@ -221,8 +217,6 @@ a {
   text-align: center;
   margin: auto;
   width: fit-content;
-  font-family: Aper;
-  font-size: 1vw;
 }
 #arrow4 {
   width: 6.25%;
@@ -247,8 +241,6 @@ a {
   text-align: center;
   margin: auto;
   width: fit-content;
-  font-family: Aper;
-  font-size: 1vw;
 }
 
 #proc_container {
@@ -277,21 +269,22 @@ a {
   margin-bottom: 5%;
 }
 
-#discovery_pic{
+#discovery_pic {
   background: url(Discovery.png);
   width: 100%;
   height: 60vh;
   margin: 3vh 0;
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   display: block;
 }
 
-#discovery::after{
+#discovery::after {
   content: "-Synthezing data points and futher connecting the dots through affinity mapping- ";
   display: block;
   font-family: Aper;
-  font-size: 0.7vw;
+  font-size: 1vw;
   text-align: center;
 }
 
@@ -327,11 +320,13 @@ a {
 }
 
 #cards_container {
-  margin: 7% auto 10% auto;
+  margin: 13% auto 13% auto;
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
-  height: 40vh;
+  width: 130%;
+  height: 50vh;
+  font-family: Aper;
+  font-size: 1.3vw;
   justify-content: center;
   align-content: center;
 }
@@ -354,8 +349,6 @@ a {
 
 #one_text_container {
   /*   padding:auto; */
-  font-family: Aper;
-  font-size: 1vw;
   width: 70%;
   height: 100%;
 }
@@ -394,8 +387,6 @@ a {
 
 #two_text_container {
   /*   padding:auto; */
-  font-family: Aper;
-  font-size: 1vw;
   width: 70%;
   height: 100%;
 }
@@ -424,7 +415,6 @@ a {
     0 15px 40px rgba(166, 173, 201, 0.15);
   display: flex;
   flex-flow: row nowrap;
-
 }
 
 #three_image_container {
@@ -435,8 +425,6 @@ a {
 
 #three_text_container {
   /*   padding:auto; */
-  font-family: Aper;
-  font-size: 1vw;
   width: 70%;
   height: 100%;
 }
@@ -473,8 +461,6 @@ a {
 
 #four_text_container {
   /*   padding:auto; */
-  font-family: Aper;
-  font-size: 1vw;
   width: 70%;
   height: 100%;
 }
@@ -490,7 +476,7 @@ a {
   /* border: 1px solid red; */
   height: 50%;
   width: 50%;
-  margin: 47% auto;
+  margin: 50% auto;
 }
 
 #prob_pics {

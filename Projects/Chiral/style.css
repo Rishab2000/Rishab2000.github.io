@@ -117,7 +117,7 @@ a {
 }
 
 #index_container {
-  width: 65%;
+  width: 60%;
   height: 20vh;
   margin: 5% 40% 0 10%;
   display: flex;
@@ -289,8 +289,8 @@ a {
 }
 
 #questions_pic {
-  height: 60vh;
-  width: 80%;
+  height: 65vh;
+  width: 100%;
   margin: 3vh 0;
   background: url(questions.png);
   background-size: contain;
@@ -320,19 +320,19 @@ a {
 }
 
 #cards_container {
-  margin: 13% auto 13% auto;
+  margin: 8% 0 11% 0;
   display: flex;
   flex-flow: row wrap;
   width: 130%;
   height: 50vh;
   font-family: Aper;
   font-size: 1.3vw;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
 }
 
 #one {
-  margin: 2%;
+  margin: 3% 3% 3% 0;
   width: 40%;
   height: 50%;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
@@ -362,15 +362,15 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   /* border: 1px solid red; */
-  height: 40%;
-  width: 40%;
+  height: 35%;
+  width: 35%;
   margin-top: 47%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #two {
-  margin: 2%;
+  margin: 3% 3% 3% 0;
   width: 40%;
   height: 50%;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
@@ -400,15 +400,15 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   /* border: 1px solid red; */
-  height: 50%;
-  width: 50%;
+  height: 45%;
+  width: 45%;
   margin-top: 54%;
   margin-left: auto;
   margin-right: auto;
 }
 
 #three {
-  margin: 2%;
+  margin: 3% 3% 3% 0;
   width: 40%;
   height: 50%;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
@@ -438,13 +438,13 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   /* border: 1px solid red; */
-  height: 50%;
-  width: 50%;
+  height: 45%;
+  width: 45%;
   margin: 54% auto;
 }
 
 #four {
-  margin: 2%;
+  margin: 3% 3% 3% 0;
   width: 40%;
   height: 50%;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
@@ -474,8 +474,8 @@ a {
   background-repeat: no-repeat;
   background-size: contain;
   /* border: 1px solid red; */
-  height: 50%;
-  width: 50%;
+  height: 45%;
+  width: 45%;
   margin: 50% auto;
 }
 
@@ -497,4 +497,24 @@ a {
   padding: 2% 40% 0 0;
   color: #080808b6;
   height: max-content;
+}
+
+#user_persona {
+  background: url(User_persona.png);
+  margin-top: 5%;
+  width: 130%;
+  height: 81vh;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+    0 15px 40px rgba(166, 173, 201, 0.15);
+}
+
+#Empathize::after{
+  content:"-User Persona- ";
+  display: block;
+  font-family: Aper;
+  font-size: 1vw;
+  margin-left: 43%;
+  text-align: center;
 }

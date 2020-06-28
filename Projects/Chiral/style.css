@@ -103,7 +103,7 @@ a {
   display: block;
   font-family: AperBol;
   padding: 10% 10% 0 10%;
-  font-size: 1.6vw;
+  font-size: 1.8vw;
 }
 
 #desc {
@@ -249,34 +249,28 @@ a {
   margin: 1% 0 0 10%;
   width: 90%;
   height: 100%;
+  color: #080808b6;
+  font-family: Aper;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 1.6;
 }
 
 #proc_title {
   display: block;
   font-family: AperBol;
   padding: 5% 0 0 0;
-  font-size: 1.6vw;
+  font-size: 1.8vw;
 }
 
 #discovery {
   display: block;
-  font-family: Aper;
-  font-weight: 400;
-  font-size: 1.2vw;
-  line-height: 1.6;
   padding: 2% 40% 0 0;
-  color: #080808b6;
   margin-bottom: 5%;
 }
 
 #discovery_pic {
-  background: url(Discovery.png);
-  width: 100%;
-  height: 60vh;
-  margin: 3vh 0;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
+  margin: 3% 0;
   display: block;
 }
 
@@ -300,23 +294,13 @@ a {
 
 #finding {
   display: block;
-  font-family: Aper;
-  font-weight: 400;
-  font-size: 1.2vw;
-  line-height: 1.6;
   padding: 2% 40% 0 0;
-  color: #080808b6;
   margin-bottom: 3%;
 }
 
 #key_discovery {
   display: block;
-  font-family: Aper;
-  font-weight: 400;
-  font-size: 1.2vw;
-  line-height: 1.6;
   padding: 2% 40% 0 0;
-  color: #080808b6;
 }
 
 #cards_container {
@@ -490,31 +474,75 @@ a {
 
 #Empathize {
   display: block;
-  font-family: Aper;
-  font-weight: 400;
-  font-size: 1.2vw;
-  line-height: 1.6;
   padding: 2% 40% 0 0;
-  color: #080808b6;
   height: max-content;
 }
 
 #user_persona {
-  background: url(User_persona.png);
   margin-top: 5%;
-  width: 130%;
-  height: 81vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
-    0 15px 40px rgba(166, 173, 201, 0.15);
 }
 
-#Empathize::after{
-  content:"-User Persona- ";
+#Empathize::after {
+  content: "-User Persona- ";
   display: block;
   font-family: Aper;
   font-size: 1vw;
-  margin-left: 43%;
+  margin-left: 10%;
   text-align: center;
+}
+
+#Designing {
+  display: block;
+  padding: 2% 40% 0 0;
+  height: max-content;
+}
+
+#logo_design {
+  width: 60%;
+  max-height: 50vh;
+  margin: 5% auto 7% auto;
+}
+
+#wireframe_pics {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 4% 0 10% 0;
+  width: 102%;
+  height: 53vw;
+}
+
+#Prototyping {
+  display: block;
+  padding: 2% 40% 0 0;
+  height: max-content;
+}
+
+#wire_pics {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4% 0 8% 0;
+  width: 102%;
+  height: 53vw;
+}
+
+#user_testing {
+  display: block;
+  padding: 2% 40% 0 0;
+  height: max-content;
+}
+
+#highfid_pics {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4% 0 8% 0;
+  width: 102%;
+  height: 30vw;
 }

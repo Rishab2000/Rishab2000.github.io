@@ -446,7 +446,7 @@ body {
   margin: 34% auto;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 965px) {
   @font-face {
     font-family: "avenir-book";
     src: url(/Fonts/avenir/avenir-book.otf);
@@ -525,11 +525,10 @@ body {
     color: #080808f6;
     clear: both;
   }
-
   #image1 {
     width: 100%;
-    height: calc(35em + 1vw);
-    background: url("images/1920/2.png");
+    height: 70vh;
+    background: url("images/Mobile/Behance.png");
     background-size: cover;
     background-position: 51% 0px;
     background-repeat: no-repeat;
@@ -586,14 +585,14 @@ body {
   }
 
   #image2 {
+    float: right;
     width: 100%;
-    height: calc(35em + 3vw);
+    height: 100vh;
     background: url("images/Iphone Mockup.jpg");
-    background-color: steelblue;
     /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 65% calc(35% + 2vw);
+    background-position: 65% 0px;
   }
 
   #container2 {
@@ -610,7 +609,7 @@ body {
     font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.2;
-    font-size: calc(1.1em + 1vw);
+    font-size: 5vw;
     padding: 0px 10% 0px;
     color: rgba(0, 0, 0, 0.863);
   }
@@ -651,7 +650,7 @@ body {
   #image3 {
     float: right;
     width: 100%;
-    height: calc(35em + 1vw);
+    height: 100vh;
     background: url("images/1920/chiral2.png");
     /* margin-top: 13%; */
     background-size: cover;
@@ -673,7 +672,7 @@ body {
     font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.2;
-    font-size: calc(1.1em + 1vw);
+    font-size: 5vw;
     padding: 0px 10% 0px;
     color: rgba(0, 0, 0, 0.863);
   }
@@ -714,7 +713,7 @@ body {
   #image4 {
     float: right;
     width: 100%;
-    height: calc(35em + 1vw);
+    height: 100vh;
     background: url("images/iPhone\ X_MockUp2.png");
     /* margin-top: 13%; */
     background-size: cover;
@@ -736,7 +735,7 @@ body {
     font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.2;
-    font-size: calc(1.1em + 1vw);
+    font-size: 5vw;
     padding: 0px 10% 0px;
     color: rgba(0, 0, 0, 0.863);
   }
@@ -777,7 +776,7 @@ body {
   #image5 {
     float: right;
     width: 100%;
-    height: calc(35em + 1vw);
+    height: 100vh;
     background: url("images/1920/Web4.png");
     /* margin-top: 13%; */
     background-size: cover;
@@ -799,7 +798,7 @@ body {
     font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 500;
     line-height: 1.2;
-    font-size: calc(1.1em + 1vw);
+    font-size: 5vw;
     padding: 0px 10% 0px;
     color: rgba(0, 0, 0, 0.863);
   }
@@ -815,130 +814,19 @@ body {
   }
 
   #button5 {
-    text-align: center;
-    border-style: solid;
-    border-width: medium;
-    /* background-color: darkblue; */
-    width: 10%;
-    margin: 10% 10.2%;
-    color: #ff2d55;
-    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    /* padding-right: 15%; */
-    font-size: calc(0.2em + 1vw);
-  }
-
-  #button5_text {
-    margin: 37% auto;
-  }
+  text-align: center;
+  border-style: solid;
+  border-width: medium;
+  /* background-color: darkblue; */
+  width: 10%;
+  margin: 10% 10.2%;
+  color: #ff2d55;
+  font-family:  'avenir-medium', 'Open Sans', Helvetica, Arial, sans-serif;
+  /* padding-right: 15%; */
+  font-size: calc(0.2em + 1vw);
 }
 
-@media only screen and (max-width: 768px) {
-  #image1 {
-    width: 100%;
-    height: calc(34em + 1vw);
-    background: url("images/1920/2.png");
-    background-size: cover;
-    background-position: 51% 0px;
-    background-repeat: no-repeat;
-    display: block;
-  }
-  #image2 {
-    float: right;
-    width: 100%;
-    height: calc(33em + 3vw);
-    background: url("images/Iphone Mockup.jpg");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 65% 0px;
-  }
-
-  #image3 {
-    float: right;
-    width: 100%;
-    height: calc(34em + 1vw);
-    background: url("images/1920/chiral2.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 53% 0px;
-  }
-
-  #image4 {
-    float: right;
-    width: 100%;
-    height: calc(34em + 1vw);
-    background: url("images/iPhone\ X_MockUp2.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 65% 0px;
-  }
-
-  #image5 {
-    float: right;
-    width: 100%;
-    height: calc(34em + 1vw);
-    background: url("images/1920/Web4.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60% 0px;
-  }
+#button5_text{
+  margin: 37% auto;
 }
-
-@media only screen and (max-width: 576px) {
-  #image1 {
-    width: 100%;
-    height: calc(27em + 1vw);
-    background: url("images/1920/2.png");
-    background-size: cover;
-    background-position: 51% 0px;
-    background-repeat: no-repeat;
-    display: block;
-  }
-
-  #image2 {
-    float: right;
-    width: 100%;
-    height: calc(27em + 3vw);
-    background: url("images/Iphone Mockup.jpg");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 65% 0px;
-  }
-
-  #image3 {
-    float: right;
-    width: 100%;
-    height: calc(27em + 3vw);
-    background: url("images/1920/chiral2.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 53% 0px;
-  }
-
-  #image4 {
-    float: right;
-    width: 100%;
-    height: calc(27em + 3vw);
-    background: url("images/iPhone\ X_MockUp2.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 65% 0px;
-  }
-
-  #image5 {
-    float: right;
-    width: 100%;
-    height: calc(27em + 3vw);
-    background: url("images/1920/Web4.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60% 0px;
-  }
 }

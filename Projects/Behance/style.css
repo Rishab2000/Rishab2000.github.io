@@ -502,7 +502,7 @@ a {
 }
 
 #redun_image {
-  background: url(Pictures/final/1.png);
+  background: url(Pictures/final/1_opt.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 68vh;
@@ -532,7 +532,7 @@ a {
 }
 
 #focus_image {
-  background: url(Pictures/final/2.png);
+  background: url(Pictures/final/2_opt.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 58vh;
@@ -562,7 +562,7 @@ a {
 }
 
 #ocum_image {
-  background: url(Pictures/final/3.png);
+  background: url(Pictures/final/3_opt.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 58vh;
@@ -592,7 +592,7 @@ a {
 }
 
 #sam_image {
-  background: url(Pictures/final/4.png);
+  background: url(Pictures/final/4_opt.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 58vh;
@@ -622,7 +622,7 @@ a {
 }
 
 #new_image {
-  background: url(Pictures/final/5.png);
+  background: url(Pictures/final/5_opt.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 58vh;

@@ -154,6 +154,10 @@ p {
   justify-content: space-between;
 }
 
+a:hover {
+color: #be203d !important;
+}
+
  /* hamburger design */
 
 .icon-bar {
@@ -163,14 +167,22 @@ p {
   display: block;
   transition: all 0.2s;
   margin-top: 0.4rem;
+  outline: none;
 }
 
 .navbar-toggler {
+  outline: none;
   border: none;
   background: transparent !important;
   padding: 0 0 2% 0;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
 /* Hamburger animation */
 
 .navbar-toggler .top-bar {
@@ -203,7 +215,6 @@ p {
   color: #ff2d55;
   clear: both;
   display: block;
-  /* position: absolute; */
 }
 
 .intro_text2 {

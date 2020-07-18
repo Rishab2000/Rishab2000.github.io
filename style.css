@@ -37,6 +37,10 @@ typograpgy - line-height, letter-spacing, text-transform, word-spacing, text-dec
 Colours 
 #ff0047
 #ff4674
+
+h1 1.1em + 1vw
+h2 1em + 0.5vw
+h3 0.7em + 1vw
 */
 body {
   width: 100%;
@@ -72,377 +76,259 @@ body {
   src: url(/Fonts/Avenir/Avenir-Black.ttf);
 }
 
-.header {
-  font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
-  width: 80%;
-  margin: 7% auto 0 auto;
-  /* position: fixed; */
+p {
+  margin: 0em;
 }
 
-#nav_container {
+.h1 {
+  font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(1.1em + 1vw);
+  color: #080808f6;
+}
+
+.h2 {
+  font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(1em + 0.5vw);
+  color: #080808f6;
+}
+
+.h3 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.7em + 1vw);
+}
+
+.h4 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.7em + 1vw);
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0.03rem;
+}
+
+.b1 {
+  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.3em + 1vw);
+  line-height: 1.6em;
+}
+
+.b2 {
+  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.6em;
+
+  font-size: calc(0.2em + 1vw);
+}
+
+.button1 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.03em + 1vw);
+}
+
+.header {
+  width: 80%;
+  margin: 7% auto 0 auto;
+}
+
+/* navbar style */
+
+.nav_container {
   width: 100%;
   margin-bottom: 1%;
   display: flex;
   justify-content: space-between;
 }
 
-.logo {
-  font-size: calc(1.1em + 1vw);
-  float: left;
-  color: #080808f6;
-}
-
-.top {
-  text-decoration: none;
-  color: #0808087c;
-}
-
-.nav {
-  font-size: calc(1em + 0.5vw);
+.navbar {
+  padding:0;
+  width: 100%;
+  margin-bottom: 1%;
   display: flex;
-  float: right;
+  justify-content: space-between;
+}
+.navbar-nav {
+  align-self: flex-end;
+  color: #0808087c;
+  display: flex;
   margin-top: 1%;
-  width: 30%;
+  width: 40%;
   justify-content: space-between;
 }
 
-.background {
+ /* hamburger design */
+
+.icon-bar {
+  width: 2rem;
+  height: 0.14rem;
+  background-color: rgba(0, 0, 0, 0.863);
   display: block;
-  clear: both;
-  width: 100%;
+  transition: all 0.2s;
+  margin-top: 0.4rem;
 }
 
-#intro_text1 {
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+  padding: 0 0 2% 0;
+}
+
+/* Hamburger animation */
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.intro_text1 {
   color: #ff2d55;
   clear: both;
   display: block;
-  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: calc(0.7em + 1vw);
   /* position: absolute; */
 }
 
-#intro_text2 {
-  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+.intro_text2 {
   padding-right: 71%;
-  line-height: 1.6em;
-  margin-top: 10%;
-  font-size: calc(0.3em + 1vw);
-  color: #080808f6;
+  margin: 10% 0 6%;
+  color: rgba(0, 0, 0, 0.863);
   clear: both;
 }
 
-.project1 {
-  margin-top: 10vh;
-  display: block;
-  width: 100%;
+.container_right {
+  float: right;
+  width: 40%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-#image1 {
+.container_left {
   float: left;
   width: 60%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image_left {
+  float: left;
+  width: 60%;
+  height: 100vh;
+}
+
+.image_right {
+  float: right;
+  width: 40%;
+  height: 100vh;
+}
+
+.first {
   background: url("images/1920/2.png");
   background-size: cover;
   background-position: 51% 0px;
   background-repeat: no-repeat;
-}
-
-#container1 {
-  float: right;
-  width: 40%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#text1 {
-  font-family: "avenir-heavy", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.2em;
-  font-size: calc(0.7em + 1vw);
-  padding: 0px 25% 0px;
-  color: rgba(0, 0, 0, 0.863);
-}
-
-#desc1 {
-  text-align: left;
-  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.6em;
-  padding: 10% 25% 0px;
-  font-size: calc(0.2em + 1vw);
-  color: #727272;
-}
-
-#button1 {
-  text-align: center;
-  border-style: solid;
-  border-width: medium;
-  /* background-color: darkblue; */
-  width: 12%;
-  margin: 10% 25%;
-  color: #ff2d55;
-  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-  /* padding-right: 15%; */
-  font-size: calc(0.03em + 1vw);
-}
-
-#button1_text {
-  margin: 34% auto;
-}
-
-.project2 {
-  display: block;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
-#image2 {
-  float: right;
-  width: 40%;
-  height: 100vh;
+.second {
   background: url("images/Iphone Mockup.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -13.8vw 0px;
-}
-
-#container2 {
-  float: left;
-  width: 60%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#text2 {
-  font-family: "avenir-heavy", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.2em;
-  font-size: calc(0.7em + 1vw);
-  padding: 0px 17% 0px;
-  color: rgba(0, 0, 0, 0.863);
-}
-
-#desc2 {
-  text-align: left;
-  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: calc(0.2em + 1vw);
-  line-height: 1.6em;
-  padding: 6% 38% 0px 17%;
-  font-size: 1.3vw;
-  color: #727272;
-}
-
-#button2 {
-  text-align: center;
-  border-style: solid;
-  border-width: medium;
-  width: 8%;
-  margin: 6.4% 17.2%;
-  color: #ff2d55;
-  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-  /* padding-right: 15%; */
-  font-size: calc(0.03em + 1vw);
-}
-
-#button2_text {
-  margin: 34% auto;
-}
-
-.project3 {
-  display: block;
+  background-position: 51% 0px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
-#image3 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  float: left;
-  width: 60%;
-  height: 100vh;
+.third {
   background: url("images/1920/chiral2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -14.3vw;
+  background-position: 51% 0px;
+  width: 100%;
+  height: 100%;
 }
 
-#container3 {
-  float: right;
-  width: 40%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.fourth {
+  background: url("images/iPhone\ X_MockUp2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 51%;
+  width: 100%;
+  height: 100%;
 }
 
-#text3 {
-  font-family: "avenir-heavy", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.2em;
-  font-size: calc(0.7em + 1vw);
+.fifth {
+  background: url("images/1920/Web4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 51%;
+  width: 100%;
+  height: 100%;
+}
+
+.text_right {
   padding: 0px 25% 0px;
   color: rgba(0, 0, 0, 0.863);
 }
 
-#desc3 {
-  text-align: left;
-  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.6em;
-  padding: 10% 25% 0px;
-  font-size: calc(0.3em + 1vw);
-  color: #727272;
-}
-
-#button3 {
-  text-align: center;
-  border-style: solid;
-  border-width: medium;
-  /* background-color: darkblue; */
-  width: 12%;
-  margin: 10% 25%;
-  color: #ff2d55;
-  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-  /* padding-right: 15%; */
-  font-size: calc(0.03em + 1vw);
-}
-
-#button3_text {
-  margin: 34% auto;
-}
-
-.project4 {
-  display: block;
-  width: 100%;
-  height: 100vh;
-}
-
-#image4 {
-  flex-direction: row-reverse;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  float: right;
-  width: 40%;
-  height: 100vh;
-  background: url("images/iPhone\ X_MockUp2.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -14.3vw;
-}
-
-#container4 {
-  float: left;
-  width: 60%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#text4 {
-  font-family: "avenir-heavy", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.2em;
-  font-size: calc(0.7em + 1vw);
+.text_left {
   padding: 0px 17% 0px;
   color: rgba(0, 0, 0, 0.863);
 }
 
-#desc4 {
+.desc_right {
   text-align: left;
-  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.6em;
+  color: #727272;
+  padding: 10% 25% 0px;
+}
+
+.desc_left {
+  text-align: left;
   padding: 6% 38% 0px 17%;
-  font-size: calc(0.3em + 1vw);
   color: #727272;
 }
 
-#button4 {
+.button_right {
+  text-align: center;
+  border-style: solid;
+  border-width: medium;
+  width: 12%;
+  margin: 10% 25%;
+  color: #ff2d55;
+}
+
+.button_left {
   text-align: center;
   border-style: solid;
   border-width: medium;
   width: 8%;
   margin: 6.4% 17.2%;
   color: #ff2d55;
-  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-  /* padding-right: 15%; */
-  font-size: calc(0.03em + 1vw);
 }
 
-#button4_text {
-  margin: 24% auto;
-}
-
-.project5 {
-  display: block;
-  width: 100%;
-  height: 100vh;
-}
-
-#image5 {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  float: left;
-  width: 60%;
-  height: 100vh;
-  background: url("images/1920/Web4.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -14.3vw;
-}
-
-#container5 {
-  float: right;
-  width: 40%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#text5 {
-  font-family: "avenir-heavy", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.2em;
-  font-size: calc(0.7em + 1vw);
-  padding: 0px 25% 0px;
-  color: rgba(0, 0, 0, 0.863);
-}
-
-#desc5 {
-  text-align: left;
-  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  line-height: 1.6em;
-  padding: 10% 25% 0px;
-  font-size: calc(0.3em + 1vw);
-  color: #727272;
-}
-
-#button5 {
-  text-align: center;
-  border-style: solid;
-  border-width: medium;
-  /* background-color: darkblue; */
-  width: 12%;
-  margin: 10% 25%;
-  color: #ff2d55;
-  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-  /* padding-right: 15%; */
-  font-size: calc(0.03em + 1vw);
-}
-
-#button5_text {
+.button_text {
   margin: 34% auto;
 }
 
@@ -467,14 +353,59 @@ body {
     src: url(/Fonts/avenir/avenir-black.otf);
   }
 
-  .header {
-    font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
-    width: 80%;
-    margin: 7% auto 0 auto;
-    /* position: fixed; */
+  p {
+    margin: 0em;
   }
 
-  #nav_container {
+  .h1 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1em + 1vw);
+    color: #080808f6;
+  }
+
+  .h2 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.6em + 1vw);
+    color: #080808f6;
+  }
+
+  .h3 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.8em + 1vw);
+  }
+
+  .h4 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1em + 1vw);
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 0.03rem;
+  }
+
+  .b1 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.4em + 1vw);
+    line-height: 1.6em;
+  }
+
+  .b2 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.6em;
+    font-size: calc(0.4em + 1vw);
+  }
+
+  .button1 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.2em + 1vw);
+  }
+  /* 
+  .header {
+    width: 80%;
+    margin: 7% auto 0 auto;
+  }
+
+  .nav_container {
     width: 100%;
     margin-bottom: 1%;
     display: flex;
@@ -482,7 +413,6 @@ body {
   }
 
   .logo {
-    font-size: calc(1em + 1vw);
     float: left;
     color: #080808f6;
   }
@@ -490,7 +420,7 @@ body {
   .top {
     text-decoration: none;
     color: #0808087c;
-  }
+  } */
 
   .nav {
     font-size: calc(0.9em + 0.5vw);
@@ -501,444 +431,340 @@ body {
     justify-content: space-between;
   }
 
-  .background {
-    display: block;
-    clear: both;
-    width: 100%;
-  }
-
-  #intro_text1 {
+  .intro_text1 {
     color: #ff2d55;
     clear: both;
     display: block;
-    font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.6em + 1vw);
-    /* position: absolute; */
   }
 
-  #intro_text2 {
-    font-family: "avenir-book" "Open Sans", Helvetica, Arial, sans-serif;
+  .intro_text2 {
     padding-right: 45%;
-    line-height: 1.7em;
     margin-top: 10%;
-    font-size: calc(0.46em + 1vw);
-    color: #080808f6;
     clear: both;
+    color: #080808f6;
   }
 
-  #image1 {
+  /* Image styles */
+
+  .image_left {
     width: 100%;
     height: calc(35em + 1vw);
+  }
+
+  .image_right {
+    width: 100%;
+    height: calc(35em + 3vw);
+  }
+
+  .first {
     background: url("images/1920/2.png");
     background-size: cover;
     background-position: 51% 0px;
     background-repeat: no-repeat;
-    display: block;
-  }
-
-  #container1 {
     width: 100%;
-    height: 50%;
-    padding-top: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 12%;
+    height: 100%;
   }
 
-  #text1 {
-    font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
-    line-height: 1.2em;
-    font-size: calc(1.1em + 1vw);
-    padding: 0px 10% 0px;
-    color: rgba(0, 0, 0, 0.863);
-  }
-
-  #desc1 {
-    text-align: left;
-    font-family: "avenir-book" "Open Sans", Helvetica, Arial, sans-serif;
-    line-height: 1.6em;
-    padding: 10% 16% 0px 10%;
-    font-size: calc(0.46em + 1vw);
-    color: #727272;
-  }
-
-  #button1 {
-    text-align: center;
-    border-style: solid;
-    border-width: medium;
-    /* background-color: darkblue; */
-    width: 10%;
-    margin: 10% 10.2%;
-    color: #ff2d55;
-    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    /* padding-right: 15%; */
-    font-size: calc(0.2em + 1vw);
-  }
-
-  #button1_text {
-    margin: 37% auto;
-  }
-  .project2 {
-    display: block;
-    width: 100%;
-    height: 100vh;
-  }
-
-  #image2 {
-    width: 100%;
-    height: calc(35em + 3vw);
+  .second {
     background: url("images/Iphone Mockup.jpg");
-    background-color: steelblue;
-    /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 65% calc(35% + 2vw);
+    width: 100%;
+    height: 100%;
   }
 
-  #container2 {
+  .third {
+    background: url("images/1920/chiral2.png");
+    /* margin-top: 13%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 53% 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fourth {
+    background: url("images/iPhone\ X_MockUp2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fifth {
+    background: url("images/1920/Web4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* project details container */
+
+  .container_right {
+    width: 100%;
+    height: 50%;
+    padding-top: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8%;
+  }
+
+  .container_left {
     width: 100%;
     height: 50%;
     padding-top: 13%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 12%;
+    margin-bottom: 8%;
   }
 
-  #text2 {
-    font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: calc(1.1em + 1vw);
+  /* project heading style */
+
+  .text_right {
     padding: 0px 10% 0px;
     color: rgba(0, 0, 0, 0.863);
   }
 
-  #desc2 {
-    text-align: left;
-    font-family: "avenir-book" "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    line-height: 1.7em;
-    padding: 10% 16% 0px 10%;
-    font-size: calc(0.46em + 1vw);
-    color: #727272;
-  }
-
-  #button2 {
-    text-align: center;
-    border-style: solid;
-    border-width: medium;
-    /* background-color: darkblue; */
-    width: 10%;
-    margin: 10% 10.2%;
-    color: #ff2d55;
-    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    /* padding-right: 15%; */
-    font-size: calc(0.2em + 1vw);
-  }
-
-  #button2_text {
-    margin: 37% auto;
-  }
-
-  .project3 {
-    display: block;
-    width: 100%;
-    height: 100vh;
-  }
-
-  #image3 {
-    float: right;
-    width: 100%;
-    height: calc(35em + 1vw);
-    background: url("images/1920/chiral2.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 53% 0px;
-  }
-
-  #container3 {
-    width: 100%;
-    height: 50%;
-    padding-top: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 12%;
-  }
-
-  #text3 {
-    font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: calc(1.1em + 1vw);
+  .text_left {
     padding: 0px 10% 0px;
     color: rgba(0, 0, 0, 0.863);
   }
 
-  #desc3 {
+  /* project description style */
+
+  .desc_right {
     text-align: left;
-    font-family: "avenir-book" "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    line-height: 1.7em;
-    padding: 10% 16% 0px 10%;
-    font-size: calc(0.46em + 1vw);
+    padding: 5% 40% 0px 10%;
     color: #727272;
   }
 
-  #button3 {
+  .desc_left {
+    text-align: left;
+    padding: 5% 40% 0px 10%;
+    color: #727272;
+  }
+
+  /* button style */
+
+  .button_right {
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    width: 7%;
+    margin: 5% 10.2% 10% 10.2%;
+    color: #ff2d55;
+  }
+
+  .button_left {
     text-align: center;
     border-style: solid;
     border-width: medium;
     /* background-color: darkblue; */
-    width: 10%;
-    margin: 10% 10.2%;
+    width: 7%;
+    margin: 5% 10.2% 10% 10.2%;
     color: #ff2d55;
-    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    /* padding-right: 15%; */
-    font-size: calc(0.2em + 1vw);
   }
 
-  #button3_text {
-    margin: 37% auto;
-  }
-
-  .project4 {
-    display: block;
-    width: 100%;
-    height: 100vh;
-  }
-
-  #image4 {
-    float: right;
-    width: 100%;
-    height: calc(35em + 1vw);
-    background: url("images/iPhone\ X_MockUp2.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 65% 0px;
-  }
-
-  #container4 {
-    width: 100%;
-    height: 50%;
-    padding-top: 18%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 12%;
-  }
-
-  #text4 {
-    font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: calc(1.1em + 1vw);
-    padding: 0px 10% 0px;
-    color: rgba(0, 0, 0, 0.863);
-  }
-
-  #desc4 {
-    text-align: left;
-    font-family: "avenir-book" "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    line-height: 1.7em;
-    padding: 10% 16% 0px 10%;
-    font-size: calc(0.46em + 1vw);
-    color: #727272;
-  }
-
-  #button4 {
-    text-align: center;
-    border-style: solid;
-    border-width: medium;
-    /* background-color: darkblue; */
-    width: 10%;
-    margin: 10% 10.2%;
-    color: #ff2d55;
-    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    /* padding-right: 15%; */
-    font-size: calc(0.2em + 1vw);
-  }
-
-  #button4_text {
-    margin: 37% auto;
-  }
-
-  .project5 {
-    display: block;
-    width: 100%;
-    height: 100vh;
-  }
-
-  #image5 {
-    float: right;
-    width: 100%;
-    height: calc(35em + 1vw);
-    background: url("images/1920/Web4.png");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 60% 0px;
-  }
-
-  #container5 {
-    width: 100%;
-    height: 50%;
-    padding-top: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 12%;
-  }
-
-  #text5 {
-    font-family: "avenir-medium" "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    line-height: 1.2;
-    font-size: calc(1.1em + 1vw);
-    padding: 0px 10% 0px;
-    color: rgba(0, 0, 0, 0.863);
-  }
-
-  #desc5 {
-    text-align: left;
-    font-family: "avenir-book" "Open Sans", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    line-height: 1.7em;
-    padding: 10% 16% 0px 10%;
-    font-size: calc(0.46em + 1vw);
-    color: #727272;
-  }
-
-  #button5 {
-    text-align: center;
-    border-style: solid;
-    border-width: medium;
-    /* background-color: darkblue; */
-    width: 10%;
-    margin: 10% 10.2%;
-    color: #ff2d55;
-    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    /* padding-right: 15%; */
-    font-size: calc(0.2em + 1vw);
-  }
-
-  #button5_text {
+  .button_text {
     margin: 37% auto;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  #image1 {
+  .image_left {
     width: 100%;
     height: calc(34em + 1vw);
+  }
+
+  .image_right {
+    width: 100%;
+    height: calc(34em + 1vw);
+  }
+
+  .first {
     background: url("images/1920/2.png");
     background-size: cover;
     background-position: 51% 0px;
     background-repeat: no-repeat;
-    display: block;
-  }
-  #image2 {
-    float: right;
     width: 100%;
-    height: calc(33em + 3vw);
-    background: url("images/Iphone Mockup.jpg");
-    /* margin-top: 13%; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 65% 0px;
+    height: 100%;
   }
 
-  #image3 {
-    float: right;
+  .second {
+    background: url("images/Iphone Mockup.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 65% calc(35% + 2vw);
     width: 100%;
-    height: calc(34em + 1vw);
+    height: 100%;
+  }
+
+  .third {
     background: url("images/1920/chiral2.png");
     /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 53% 0px;
+    width: 100%;
+    height: 100%;
   }
 
-  #image4 {
-    float: right;
-    width: 100%;
-    height: calc(34em + 1vw);
+  .fourth {
     background: url("images/iPhone\ X_MockUp2.png");
-    /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 65% 0px;
+    width: 100%;
+    height: 100%;
   }
 
-  #image5 {
-    float: right;
-    width: 100%;
-    height: calc(34em + 1vw);
+  .fifth {
     background: url("images/1920/Web4.png");
-    /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 0px;
+    width: 100%;
+    height: 100%;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  #image1 {
+  .intro_text2 {
+    padding-right: 45%;
+    margin: 10% 0 20% 0;
+    clear: both;
+    color: #080808f6;
+  }
+
+  .container_right {
     width: 100%;
-    height: calc(27em + 1vw);
+    height: fit-content;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8%;
+  }
+
+  .container_left {
+    width: 100%;
+    height: fit-content;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8%;
+  }
+
+  .text_right {
+    padding: 0px 10% 0px;
+    color: rgba(0, 0, 0, 0.863);
+  }
+
+  .text_left {
+    padding: 0px 10% 0px;
+    color: rgba(0, 0, 0, 0.863);
+  }
+
+  .desc_right {
+    text-align: left;
+    padding: 5% 40% 0px 10%;
+    color: #727272;
+  }
+
+  .desc_left {
+    text-align: left;
+    padding: 5% 40% 0px 10%;
+    color: #727272;
+  }
+
+  .button_right {
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    /* background-color: darkblue; */
+    width: 7%;
+    margin: 5% 10.2% 10% 10.2%;
+    color: #ff2d55;
+  }
+
+  .button_left {
+    text-align: center;
+    border-style: solid;
+    border-width: medium;
+    /* background-color: darkblue; */
+    width: 7%;
+    margin: 5% 10.2% 10% 10.2%;
+    color: #ff2d55;
+  }
+
+  .button_text {
+    margin: 37% auto;
+  }
+
+  .image_left {
+    width: 100%;
+    height: calc(20em + 1vw);
+    overflow: hidden;
+  }
+
+  .image_right {
+    width: 100%;
+    height: calc(20em + 1vw);
+    overflow: hidden;
+  }
+
+  .first {
     background: url("images/1920/2.png");
     background-size: cover;
     background-position: 51% 0px;
     background-repeat: no-repeat;
-    display: block;
+    width: 100%;
+    height: 100%;
   }
 
-  #image2 {
-    float: right;
-    width: 100%;
-    height: calc(27em + 3vw);
+  .second {
     background: url("images/Iphone Mockup.jpg");
-    /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 65% 0px;
+    background-position: 52% calc(35% + 2vw);
+    width: 100%;
+    height: 100%;
+    transform: scale(1.3);
   }
 
-  #image3 {
-    float: right;
-    width: 100%;
-    height: calc(27em + 3vw);
+  .third {
     background: url("images/1920/chiral2.png");
     /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 53% 0px;
+    background-position: 51% 0px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
   }
 
-  #image4 {
-    float: right;
-    width: 100%;
-    height: calc(27em + 3vw);
+  .fourth {
     background: url("images/iPhone\ X_MockUp2.png");
-    /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 65% 0px;
+    width: 100%;
+    height: 100%;
   }
 
-  #image5 {
-    float: right;
-    width: 100%;
-    height: calc(27em + 3vw);
+  .fifth {
     background: url("images/1920/Web4.png");
-    /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 60% 0px;
+    width: 100%;
+    height: 100%;
   }
 }

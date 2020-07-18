@@ -9,141 +9,197 @@ CNTRL + D ==== SAME SELECTION
 CNTRL + / = TOGGLE COMMENT
 CNTRL + ENTRE = START NEW LINE
 -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Portfolio, UI/UX Designer, Resume, Personal Website">
-    <meta name="author" content="Rishab Sachidanand">
+    <meta
+      name="keywords"
+      content="Portfolio, UI/UX Designer, Resume, Personal Website"
+    />
+    <meta name="author" content="Rishab Sachidanand" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Rishab Sachidanand</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="header">
-      <div id="nav_container">
-        <div class="logo">
-          Rishab Sachidanand
-        </div>
-
-        <div class="nav">
-          <div>
-            <a href="#" class="top" style="color: #080808f6; font-weight: 900;"
-              >work</a
-            >
+      <div class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand h1" href="#">Rishab Sachidanand</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <div class="navbar-nav ml-auto h2">
+              <a class="nav-item nav-link" href="#" style="color: #080808f6; font-weight: 900;">Work</a>
+              <a class="nav-item nav-link" href="#">Blog</a>
+              <a class="nav-item nav-link" href="#">About</a>
           </div>
-          <div><a href="#" class="top">blog</a></div>
-          <div><a href="#" class="top">about</a></div>
         </div>
       </div>
+      <!-- <nav class="navbar navbar-expand navbar-light">
+        <p class="h1">
+          Rishab Sachidanand
+        </p>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div id="intro_text1">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto h2">
+            <li class="nav-item">
+              <a
+                href="#"
+                class="nav-link"
+                style="color: #080808f6; font-weight: 900;"
+                >work</a
+              >
+            </li>
+            <li>
+              <a href="#" class="nav-link">blog</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">about</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+      <p class="intro_text1 h3">
         Human Centered Designer
-      </div>
-      <div id="intro_text2">
+      </p>
+      <p class="intro_text2 b1">
         I design intuitive digital experiences in which every element serves a
         purpose. My designs give for to product visions, and arouses emotions in
         the users.
-      </div>
+      </p>
     </div>
 
-    <div class="project1">
-      <div id="image1"></div>
-      <div id="container1">
-        <div id="text1">
-          Behance Search Experience Redesign
-        </div>
-        <div id="desc1">
-          Evaluating the current search experience of Behance, through NN
-          group's evaluation heuristics. Completely redesigned the experience to
-          conceive a faster, clearer and conclusive way of search.
-        </div>
-        <a href="Projects/Behance/index.html" style="text-decoration: none;">
-          <div id="button1">
-            <div id="button1_text">
-              More
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="project2">
-      <div id="image2"></div>
-      <div id="container2">
-        <div id="text2">
-          Apple Music Redesign
-        </div>
-        <div id="desc2">
-          Redesigned the Apple Music app on both the UI and UX front by
-          following Apple’s developer guidelines.
-        </div>
-        <div id="button2">
-          <div id="button2_text">
-            More
-          </div>
-        </div>
-      </div>
+    <div class="image_left"><div class="first"></div></div>
+    <div class="container_right">
+      <p class="text_right h4">
+        Behance Search Experience Redesign
+      </p>
+      <p class="desc_right b2">
+        Evaluating the current search experience of Behance, through NN group's
+        evaluation heuristics. Completely redesigned the experience to conceive
+        a faster, clearer and conclusive way of search.
+      </p>
+      <a
+        href="Projects/Behance/index.html"
+        style="text-decoration: none;"
+        class="button_right button1"
+      >
+        <p class="button_text">
+          More
+        </p>
+      </a>
     </div>
 
-    <div class="project3">
-      <div id="image3"></div>
-      <div id="container3">
-        <div id="text3">
-          Chiral Colonies - Climate change app | UX Case study
-        </div>
-        <div id="desc3">
-          A mobile based game that aims to spread awareness on climate change,
-          geared towards young adults. Working towards a substainable future by
-          changing human behaviour.
-        </div>
-        <a href="Projects/Chiral/index.html" style="text-decoration: none;"
-          ><div id="button3">
-            <div id="button3_text">
-              More
-            </div>
-          </div>
-        </a>
-      </div>
+    <div class="image_right"><div class="second"></div></div>
+    <div class="container_left">
+      <p class="text_left h4">
+        Apple Music Redesign
+      </p>
+      <p class="desc_left b2">
+        Redesigned the Apple Music app on both the UI and UX front by following
+        Apple’s developer guidelines.
+      </p>
+      <a href="#" style="text-decoration: none;" class="button_left button1">
+        <p class="button_text">
+          More
+        </p>
+      </a>
     </div>
 
-    <div class="project4">
-      <div id="image4"></div>
-      <div id="container4">
-        <div id="text4">
-          Umbrella | Suicide Prevention App
-        </div>
-        <div id="desc4">
-          Umbrella helps recognize if a person’s frame of mind is a source of
-          danger to oneself and accordingly evaluate the threat he or she is
-          facing and help prevent that person from taking drastic actions
-        </div>
-        <div id="button4">
-          <div id="button1_text">
-            More
-          </div>
-        </div>
-      </div>
+    <div class="image_left"><div class="third"></div></div>
+    <div class="container_right">
+      <p class="text_right h4">
+        Chiral Colonies - Climate change app | UX Case study
+      </p>
+      <p class="desc_right b2">
+        A mobile based game that aims to spread awareness on climate change,
+        geared towards young adults. Working towards a substainable future by
+        changing human behaviour.
+      </p>
+      <a
+        href="Projects/Chiral/index.html"
+        style="text-decoration: none;"
+        class="button_right button1"
+      >
+        <p class="button_text">
+          More
+        </p>
+      </a>
     </div>
 
-    <div class="project5">
-      <div id="image5"></div>
-      <div id="container5">
-        <div id="text5">
-          SRISHTI Course Signup | UX Research
-        </div>
-        <div id="desc5">
-          Evaluated and enchanced the course signup process of Srishti college
-          via introducing an online portal to automate and replace tedious
-          manual work.
-        </div>
-        <div id="button5">
-          <div id="button1_text">
-            More
-          </div>
-        </div>
-      </div>
+    <div class="image_right"><div class="fourth"></div></div>
+    <div class="container_left">
+      <p class="text_left h4">
+        Umbrella | Suicide Prevention App
+      </p>
+      <p class="desc_left b2">
+        Umbrella helps recognize if a person’s frame of mind is a source of
+        danger to oneself and accordingly evaluate the threat he or she is
+        facing and help prevent that person from taking drastic actions
+      </p>
+      <a href="#" style="text-decoration: none;" class="button_left button1">
+        <p class="button_text">
+          More
+        </p>
+      </a>
     </div>
+
+    <div class="image_left"><div class="fifth"></div></div>
+    <div class="container_right">
+      <p class="text_right h4">
+        SRISHTI Course Signup | UX Research
+      </p>
+      <p class="desc_right b2">
+        Evaluated and enchanced the course signup process of Srishti college via
+        introducing an online portal to automate and replace tedious manual
+        work.
+      </p>
+      <a href="#" style="text-decoration: none;" class="button_right button1">
+        <p class="button_text">
+          More
+        </p>
+      </a>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

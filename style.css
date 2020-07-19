@@ -421,16 +421,10 @@ p {
     font-size: calc(0.2em + 1vw);
   }
 
-  .navbar-collapse {
-    height:95vh;
-    display: block;
-    /* height: 100vw; */
-  }
-
   .navbar-nav {
     font-size: calc(3.9em + 0.5vw);
     position: relative;
-    left: 35%;
+    left: 40%;
     color: #0808087c;
     display: block;
   }
@@ -585,6 +579,21 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .navbar-nav {
+    font-size: calc(3.9em + 0.5vw);
+    position: relative;
+    left: 30%;
+    color: #0808087c;
+    display: block;
+    margin: 6% 0;
+  }
+
+  .nav-item {
+    padding: calc(1.5rem + 1.5vw) 0;
+  }
+
+
   .image_left {
     width: 100%;
     height: calc(34em + 1vw);
@@ -643,6 +652,21 @@ p {
 }
 
 @media only screen and (max-width: 576px) {
+
+  
+    .navbar-nav {
+    font-size: calc(3.9em + 0.5vw);
+    position: relative;
+    left: 28%;
+    color: #0808087c;
+    display: block;
+    margin: 10% 0;
+  }
+
+  .nav-item {
+    padding: calc(1.5rem + 1.5vw) 0;
+  }
+
   .intro_text2 {
     padding-right: 45%;
     margin: 10% 0 20% 0;

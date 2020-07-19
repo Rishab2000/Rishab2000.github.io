@@ -126,6 +126,7 @@ p {
 
 .header {
   width: 80%;
+  height: max-content;
   margin: 7% auto 0 auto;
 }
 
@@ -139,13 +140,17 @@ p {
 }
 
 .navbar {
-  padding:0;
+  padding: 0;
   width: 100%;
+  height: max-content;
   margin-bottom: 1%;
   display: flex;
   justify-content: space-between;
 }
+
 .navbar-nav {
+  position: relative;
+  left: 60%;
   align-self: flex-end;
   color: #0808087c;
   display: flex;
@@ -154,11 +159,15 @@ p {
   justify-content: space-between;
 }
 
-a:hover {
-color: #be203d !important;
+.button_right:hover {
+  color: #be203d !important;
 }
 
- /* hamburger design */
+.button_left:hover {
+  color: #be203d !important;
+}
+
+/* hamburger design */
 
 .icon-bar {
   width: 2rem;
@@ -180,8 +189,8 @@ color: #be203d !important;
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 /* Hamburger animation */
@@ -411,36 +420,23 @@ color: #be203d !important;
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.2em + 1vw);
   }
-  /* 
-  .header {
-    width: 80%;
-    margin: 7% auto 0 auto;
+
+  .navbar-collapse {
+    height:95vh;
+    display: block;
+    /* height: 100vw; */
   }
 
-  .nav_container {
-    width: 100%;
-    margin-bottom: 1%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .logo {
-    float: left;
-    color: #080808f6;
-  }
-
-  .top {
-    text-decoration: none;
+  .navbar-nav {
+    font-size: calc(3.9em + 0.5vw);
+    position: relative;
+    left: 35%;
     color: #0808087c;
-  } */
+    display: block;
+  }
 
-  .nav {
-    font-size: calc(0.9em + 0.5vw);
-    display: none;
-    float: right;
-    margin-top: 1%;
-    width: 30%;
-    justify-content: space-between;
+  .nav-item {
+    padding: calc(1.5rem + 1.5vw) 0;
   }
 
   .intro_text1 {

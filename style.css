@@ -421,12 +421,17 @@ p {
     font-size: calc(0.2em + 1vw);
   }
 
+  .navbar-collapse {
+    text-align: center;
+    background: linear-gradient(#00000000, #0000000c) ;
+  }
   .navbar-nav {
-    font-size: calc(3.9em + 0.5vw);
+    font-size: calc(2.9em + 0.5vw);
     position: relative;
-    left: 40%;
+    left: 29%;
     color: #0808087c;
     display: block;
+    margin: 4% 0 ;
   }
 
   .nav-item {
@@ -434,6 +439,7 @@ p {
   }
 
   .intro_text1 {
+    margin-top: 10%;
     color: #ff2d55;
     clear: both;
     display: block;
@@ -580,10 +586,10 @@ p {
 
 @media only screen and (max-width: 768px) {
 
-    .navbar-nav {
-    font-size: calc(3.9em + 0.5vw);
+  .navbar-nav {
+    font-size: calc(2.9em + 0.5vw);
     position: relative;
-    left: 30%;
+    left: 29%;
     color: #0808087c;
     display: block;
     margin: 6% 0;
@@ -592,7 +598,6 @@ p {
   .nav-item {
     padding: calc(1.5rem + 1.5vw) 0;
   }
-
 
   .image_left {
     width: 100%;
@@ -653,14 +658,13 @@ p {
 
 @media only screen and (max-width: 576px) {
 
-  
-    .navbar-nav {
-    font-size: calc(3.9em + 0.5vw);
+  .navbar-nav {
+    font-size: calc(2.9em + 0.5vw);
     position: relative;
     left: 28%;
     color: #0808087c;
     display: block;
-    margin: 10% 0;
+    margin: 35% 0;
   }
 
   .nav-item {

@@ -7,6 +7,9 @@ $(document).ready(function () {
 $(".mobile_nav").hide();
 
 function menuSlide() {
+ $(".project_container ").fadeToggle();
+ $(".intro_text1 ").fadeToggle();
+ $(".intro_text2").fadeToggle();
  $(".mobile_nav").slideToggle();
 }
 

@@ -132,7 +132,7 @@ p {
 
 /* navbar style */
 
-.nav_container {
+/* .nav_container {
   width: 100%;
   margin-bottom: 1%;
   display: flex;
@@ -157,8 +157,26 @@ p {
   margin-top: 1%;
   width: 40%;
   justify-content: space-between;
+} */
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
 }
 
+.nav_items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.link_items {
+  padding-left: 3rem;
+}
+.mobile_nav {
+  display: none;
+}
 .button_right:hover {
   color: #be203d !important;
 }
@@ -354,25 +372,6 @@ p {
 }
 
 @media only screen and (max-width: 992px) {
-  @font-face {
-    font-family: "avenir-book";
-    src: url(/Fonts/avenir/avenir-book.otf);
-  }
-
-  @font-face {
-    font-family: "avenir-medium";
-    src: url(/Fonts/avenir/avenir-medium.otf);
-  }
-
-  @font-face {
-    font-family: "avenir-bold";
-    src: url(/Fonts/avenir/avenir-bold.otf);
-  }
-
-  @font-face {
-    font-family: "avenir-black";
-    src: url(/Fonts/avenir/avenir-black.otf);
-  }
 
   p {
     margin: 0em;
@@ -419,23 +418,6 @@ p {
   .button1 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.2em + 1vw);
-  }
-
-  .navbar-collapse {
-    text-align: center;
-    background: linear-gradient(#00000000, #0000000c) ;
-  }
-  .navbar-nav {
-    font-size: calc(2.9em + 0.5vw);
-    position: relative;
-    left: 29%;
-    color: #0808087c;
-    display: block;
-    margin: 4% 0 ;
-  }
-
-  .nav-item {
-    padding: calc(1.5rem + 1.5vw) 0;
   }
 
   .intro_text1 {
@@ -586,17 +568,116 @@ p {
 
 @media only screen and (max-width: 768px) {
 
+    .intro_text1{
+    margin-top: 0;
+  }
+
+  #nav-icon3 {
+    margin-top: 1.4%;
+    width: 1.6rem;
+    height: 1rem;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: black;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  #nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+
+  #nav-icon3 span:nth-child(2),
+  #nav-icon3 span:nth-child(3) {
+    top: 7px;
+  }
+
+  #nav-icon3 span:nth-child(4) {
+    top: 14px;
+  }
+
+  #nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  #nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
   .navbar-nav {
     font-size: calc(2.9em + 0.5vw);
     position: relative;
-    left: 29%;
+    left: 28%;
     color: #0808087c;
     display: block;
-    margin: 6% 0;
+    margin: 35% 0;
   }
 
-  .nav-item {
-    padding: calc(1.5rem + 1.5vw) 0;
+  .hamburger {
+    width: 1.3rem;
+    height: 0.15rem;
+    background-color: black;
+  }
+
+  .nav_items {
+    position: relative;
+    display: none;
+  }
+
+  .mobile_nav {
+    text-align: center;
+    margin-top: 10%;
+  }
+  .mobile_nav_items {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+  }
+
+  .mobile_items {
+    font-size: 3rem;
+    padding: 20% 0;
   }
 
   .image_left {
@@ -657,20 +738,7 @@ p {
 }
 
 @media only screen and (max-width: 576px) {
-
-  .navbar-nav {
-    font-size: calc(2.9em + 0.5vw);
-    position: relative;
-    left: 28%;
-    color: #0808087c;
-    display: block;
-    margin: 35% 0;
-  }
-
-  .nav-item {
-    padding: calc(1.5rem + 1.5vw) 0;
-  }
-
+  
   .intro_text2 {
     padding-right: 45%;
     margin: 10% 0 20% 0;

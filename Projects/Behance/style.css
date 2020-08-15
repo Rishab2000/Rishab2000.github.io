@@ -266,21 +266,21 @@ p {
   margin-left: 8%;
 }
 
- /* *******************Picture Styles*************************************** */
+/* *******************Picture Styles*************************************** */
 
-  #prob_pics {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 4%;
-    width: 100%;
-    align-items: flex-start;
-  }
+#prob_pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 4%;
+  width: 100%;
+  align-items: flex-start;
+}
 
-  .prob_pics_styles {
-    width: 30%;
-    margin-top: 3%;
-  }
+.prob_pics_styles {
+  width: 30%;
+  margin-top: 3%;
+}
 
 .outcome_picture {
   width: 100%;
@@ -328,6 +328,19 @@ p {
     font-weight: normal;
     line-height: 1.6em;
     font-size: calc(0.4em + 1vw);
+  }
+
+  .caption {
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.3em + 1vw);
+    color: #080808b6;
+  }
+
+  .caption2 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.08em + 1vw);
   }
 
   .button1 {
@@ -463,8 +476,6 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    resize: both;
-    overflow: scroll;
   }
 
   /* *******************Description Styles project explainations***************************** */
@@ -539,7 +550,7 @@ p {
     display: flex;
     flex-flow: column;
     width: 100%;
-    height: 30vh;
+    height: 20rem;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -562,7 +573,7 @@ p {
   .prob_card_image {
     margin: 3% 5% 3% 5%;
     align-self: center;
-    width: 15%;
+    width: 13%;
   }
 
   /* *******************Picture Styles*************************************** */

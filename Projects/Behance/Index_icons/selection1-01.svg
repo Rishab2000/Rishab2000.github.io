@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 28 27.9" style="enable-background:new 0 0 28 27.9;" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 24.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 27.5 27.9" style="enable-background:new 0 0 27.5 27.9;" xml:space="preserve">
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;}
-	.st2{fill:#FF2D55;stroke:#FF2D55;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#FF2D55;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
-<g id="Layer_1" class="st0">
+<g id="Layer_1_1_" class="st0">
 	<g class="st1">
-		<path d="M26.6,16.5h-10c-0.5,0-1,0.5-1,1v10c0,0.5,0.5,1,1,1h10c0.5,0,1-0.5,1-1v-10C27.6,17,27.1,16.5,26.6,16.5z"/>
-		<path d="M26.6,0.5h-10c-0.5,0-1,0.5-1,1v10c0,0.6,0.5,1,1,1h10c0.5,0,1-0.4,1-1v-10C27.6,1,27.1,0.5,26.6,0.5z"/>
-		<path d="M10.6,0.5h-10c-0.5,0-1,0.5-1,1v10c0,0.6,0.5,1,1,1h10c0.6,0,1-0.4,1-1v-10C11.6,1,11.2,0.5,10.6,0.5z"/>
-		<path d="M10.6,16.5h-10c-0.5,0-1,0.5-1,1v10c0,0.5,0.5,1,1,1h10c0.6,0,1-0.5,1-1v-10C11.6,17,11.2,16.5,10.6,16.5z"/>
+		<path d="M26.3,16.5h-10c-0.5,0-1,0.5-1,1v10c0,0.5,0.5,1,1,1h10c0.5,0,1-0.5,1-1v-10C27.3,17,26.8,16.5,26.3,16.5z"/>
+		<path d="M26.3,0.5h-10c-0.5,0-1,0.5-1,1v10c0,0.6,0.5,1,1,1h10c0.5,0,1-0.4,1-1v-10C27.3,1,26.8,0.5,26.3,0.5z"/>
+		<path d="M10.3,0.5h-10c-0.5,0-1,0.5-1,1v10c0,0.6,0.5,1,1,1h10c0.6,0,1-0.4,1-1v-10C11.3,1,10.9,0.5,10.3,0.5z"/>
+		<path d="M10.3,16.5h-10c-0.5,0-1,0.5-1,1v10c0,0.5,0.5,1,1,1h10c0.6,0,1-0.5,1-1v-10C11.3,17,10.9,16.5,10.3,16.5z"/>
 	</g>
 </g>
-<g id="Layer_2">
-	<path class="st2" d="M11.3,12.2H1.9c-0.6,0-1-0.4-1-1V1.8c0-0.6,0.4-1,1-1h9.4c0.6,0,1,0.4,1,1v9.4C12.3,11.7,11.9,12.2,11.3,12.2z
-		"/>
-	<path class="st3" d="M11.3,27.2H1.9c-0.6,0-1-0.4-1-1v-9.4c0-0.6,0.4-1,1-1h9.4c0.6,0,1,0.4,1,1v9.4C12.3,26.8,11.9,27.2,11.3,27.2
-		z"/>
-	<path class="st3" d="M26.3,27.2h-9.4c-0.6,0-1-0.4-1-1v-9.4c0-0.6,0.4-1,1-1h9.4c0.6,0,1,0.4,1,1v9.4
-		C27.3,26.8,26.9,27.2,26.3,27.2z"/>
-	<path class="st3" d="M26.3,12.2h-9.4c-0.6,0-1-0.4-1-1V1.8c0-0.6,0.4-1,1-1h9.4c0.6,0,1,0.4,1,1v9.4C27.3,11.7,26.9,12.2,26.3,12.2
-		z"/>
+<g id="Layer_2_1_">
+	<path class="st2" d="M11,12.2H1.6c-0.6,0-1-0.4-1-1V1.8c0-0.6,0.4-1,1-1H11c0.6,0,1,0.4,1,1v9.4C12,11.7,11.6,12.2,11,12.2z"/>
+	<path class="st3" d="M11,27.2H1.6c-0.6,0-1-0.4-1-1v-9.4c0-0.6,0.4-1,1-1H11c0.6,0,1,0.4,1,1v9.4C12,26.8,11.6,27.2,11,27.2z"/>
+	<path class="st3" d="M26,27.2h-9.4c-0.6,0-1-0.4-1-1v-9.4c0-0.6,0.4-1,1-1H26c0.6,0,1,0.4,1,1v9.4C27,26.8,26.6,27.2,26,27.2z"/>
+	<path class="st3" d="M26,12.2h-9.4c-0.6,0-1-0.4-1-1V1.8c0-0.6,0.4-1,1-1H26c0.6,0,1,0.4,1,1v9.4C27,11.7,26.6,12.2,26,12.2z"/>
 </g>
 </svg>

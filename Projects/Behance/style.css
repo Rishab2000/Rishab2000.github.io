@@ -291,6 +291,10 @@ p {
   margin: 5% 0 10% 0;
 }
 
+.outcome_picture_mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 992px) {
   p {
     margin: 0em;
@@ -322,12 +326,12 @@ p {
   }
 
   .sh1 {
-  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: calc(0.7em + 1vw);
-  line-height: 1.2em;
-  letter-spacing: 0.03rem;
-  color: #080808b6;
-}
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.7em + 1vw);
+    line-height: 1.2em;
+    letter-spacing: 0.03rem;
+    color: #080808b6;
+  }
 
   .b1 {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
@@ -569,7 +573,7 @@ p {
     align-content: center;
   }
 
-  .prob_card { 
+  .prob_card {
     margin: 2%;
     width: 40%;
     height: 4rem;
@@ -614,5 +618,15 @@ p {
     margin: 10% auto;
     display: block;
     width: 80%;
+  }
+
+  .outcome_picture {
+    display: none;
+  }
+
+  .outcome_picture_mobile {
+    display: block;
+    width: 100%;
+    margin: 5% 0 10% 0;
   }
 }

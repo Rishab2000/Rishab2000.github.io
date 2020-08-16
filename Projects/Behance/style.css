@@ -157,7 +157,7 @@ p {
 }
 
 .project_duration {
-  padding-bottom: 3%;
+  padding-bottom: 8%;
   color: #ffffffbd;
 }
 
@@ -231,21 +231,12 @@ p {
 
 /* *******************problems card system*************************************** */
 
-.user_pic {
-  width: 100%;
-  margin: 10% 0;
-}
-
-.user_pic_mobile {
-  display: none;
-}
-
 .cards_container {
   margin: 5% auto 10% auto;
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  height: 40vh;
+  height: 17rem;
   justify-content: center;
   align-content: center;
 }
@@ -253,6 +244,7 @@ p {
 .prob_card {
   margin: 2%;
   width: 45%;
+  height: 7rem;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
     0 15px 40px rgba(166, 173, 201, 0.15);
   display: flex;
@@ -271,6 +263,15 @@ p {
 }
 
 /* *******************Picture Styles*************************************** */
+
+.user_pic {
+  width: 100%;
+  margin: 10% 0;
+}
+
+.user_pic_mobile {
+  display: none;
+}
 
 #prob_pics {
   display: flex;
@@ -337,6 +338,7 @@ p {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.4em + 1vw);
     line-height: 1.6em;
+    color: #080808f6;
   }
 
   .b2 {
@@ -344,6 +346,7 @@ p {
     font-weight: normal;
     line-height: 1.6em;
     font-size: calc(0.4em + 1vw);
+    color: #080808f6;
   }
 
   .caption {
@@ -357,14 +360,167 @@ p {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     line-height: 1.6em;
     font-size: calc(0.08em + 1vw);
+    color: #080808f6;
   }
 
   .button1 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.2em + 1vw);
   }
+
+  /* *******************Description Styles project explainations***************************** */
+
+  .project_name {
+    padding: 7% 0 3% 0;
+    color: #ffffff;
+  }
+
+  .project_duration {
+    padding-bottom: 8%;
+    color: #ffffffbd;
+  }
+
+  .title_image {
+    background: url(../../images/1920/2.png);
+    width: 100%;
+    height: calc(40em + 3vw);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* ***********************INDEX ICONS PROJECT HIGHLIGHTS******************************* */
+
+  .index_container {
+    width: 100%;
+    margin: 5% 40% 0 0;
+    padding: 4% 0 3% 0;
+    color: #080808b6;
+    background-color: #0055ffbe;
+  }
+
+  .index {
+    width: 80%;
+    height: 13rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .index_card {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .index_card_text {
+    text-align: center;
+    width: fit-content;
+    color: #ffffff8c;
+  }
+
+  .index_picture {
+    margin-bottom: 10%;
+    width: unset;
+    height: 30%;
+  }
+
+  /* *******************Description Styles project explainations***************************** */
+
+  .desc_container {
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .desc_title {
+    color: #080808f6;
+    padding-top: 10%;
+  }
+
+  .desc {
+    display: block;
+    padding: 2% 20% 0 0;
+    color: #080808b6;
+  }
+
+  /* *******************Picture Styles*************************************** */
+  .user_pic {
+    display: none;
+  }
+
+  .user_pic_mobile {
+    margin: 10% 0;
+    display: block;
+    width: 70%;
+  }
+
+  #prob_pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4%;
+    width: 77%;
+    align-items: flex-start;
+  }
+
+  .prob_pics_styles {
+    width: 40%;
+    margin-top: 3%;
+  }
+
+  .outcome_picture {
+    display: none;
+  }
+
+  .outcome_picture_mobile {
+    display: block;
+    width: 100%;
+    margin: 5% 0 10% 0;
+  }
+
+  /* *******************problems card system*************************************** */
+
+  .cards_container {
+    margin: 5% 0 10% 0;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 17rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .prob_card {
+    margin: 2%;
+    width: 42%;
+    height: 7rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+    display: flex;
+    flex-flow: row;
+    justify-content: unset;
+  }
+
+  .prob_card_text {
+    margin: 5% 5% 5% 10%;
+  }
+
+  .prob_card_image {
+    margin: 3% 5% 3% 5%;
+    align-self: center;
+    width: 17%;
+  }
 }
-@media only screen and (max-width: 576px) {
+
+@media only screen and (max-width: 768px) {
   #nav-icon3 {
     margin-top: 1.4%;
     width: 1.6rem;
@@ -472,6 +628,102 @@ p {
     padding: 20% 0;
   }
 
+  /* ***********************INDEX ICONS PROJECT HIGHLIGHTS******************************* */
+
+  .index_container {
+    width: 100%;
+    margin: 5% 40% 0 0;
+    padding: 4% 0 3% 0;
+    color: #080808b6;
+    background-color: #0055ffbe;
+  }
+
+  .index {
+    width: 80%;
+    height: 10rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .index_card {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .index_card_text {
+    text-align: center;
+    width: fit-content;
+    color: #ffffff8c;
+  }
+
+  .index_picture {
+    margin-bottom: 10%;
+    width: unset;
+    height: 28%;
+  }
+
+  /* *******************Description Styles project explainations***************************** */
+
+  .desc_container {
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .desc_title {
+    color: #080808f6;
+    padding-top: 10%;
+  }
+
+  .desc {
+    display: block;
+    padding: 2% 10% 0 0;
+    color: #080808b6;
+  }
+
+  /* *******************problems card system*************************************** */
+
+  .cards_container {
+    margin: 5% 0 10% 0;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 22em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .prob_card {
+    margin: 2%;
+    width: 42%;
+    height: 5.5rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+    display: flex;
+    flex-flow: row;
+    justify-content: unset;
+  }
+
+  .prob_card_text {
+    margin: 5% 5% 5% 10%;
+  }
+
+  .prob_card_image {
+    margin: 3% 5% 3% 5%;
+    align-self: center;
+    width: 17%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
   /* ********************************** Header Styles ************************************************************ */
   .project_name {
     padding: 7% 0 3% 0;
@@ -592,41 +844,5 @@ p {
     margin: 3% 5% 3% 5%;
     align-self: center;
     width: 17%;
-  }
-
-  /* *******************Picture Styles*************************************** */
-  #prob_pics {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 4%;
-    width: 100%;
-    align-items: flex-start;
-  }
-
-  .prob_pics_styles {
-    width: 40%;
-    margin-top: 3%;
-  }
-
-  .user_pic {
-    display: none;
-  }
-
-  .user_pic_mobile {
-    margin: 10% auto;
-    display: block;
-    width: 80%;
-  }
-
-  .outcome_picture {
-    display: none;
-  }
-
-  .outcome_picture_mobile {
-    display: block;
-    width: 100%;
-    margin: 5% 0 10% 0;
   }
 }

@@ -321,6 +321,14 @@ p {
     letter-spacing: 0.03rem;
   }
 
+  .sh1 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.7em + 1vw);
+  line-height: 1.2em;
+  letter-spacing: 0.03rem;
+  color: #080808b6;
+}
+
   .b1 {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.4em + 1vw);
@@ -474,7 +482,7 @@ p {
   .title_image {
     background: url(../../images/1920/2.png);
     width: 100%;
-    min-height: 40vh;
+    height: 35vh;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;

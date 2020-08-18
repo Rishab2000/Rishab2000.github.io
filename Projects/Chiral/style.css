@@ -127,7 +127,7 @@ p {
 }
 
 .header_container {
-  background-image: linear-gradient(180deg, #0057ff 0, #1d53be);
+  background-image: linear-gradient(160deg, #007991 0, #78ffd6);
 }
 
 .header {
@@ -144,7 +144,7 @@ p {
 
 .nav_container .h1 {
   color: #b2ebf27e;
-  /* text-shadow: 0 0 2px rgba(255, 255, 255, 0.11); */
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav_container .h2 {
@@ -154,7 +154,7 @@ p {
 /* color: #b2ebf2; */
 
 .nav_items {
-  /* text-shadow: 0 0 2px rgba(255, 255, 255, 0.11); */
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   margin: 0.6% 0 0 0;
   list-style-type: none;
   display: flex;
@@ -207,6 +207,8 @@ p {
   color: #080808b6;
 }
 
+/* *******************Problem cards system***************************** */
+
 .cards_container {
   margin: 5% auto 10% auto;
   display: flex;
@@ -245,7 +247,7 @@ p {
   margin: 5% 40% 0 0;
   padding: 4% 0 3% 0;
   color: #080808b6;
-  background-color: #0055ffbe;
+  background-color: #24a19c;
 }
 
 .index {
@@ -270,7 +272,6 @@ p {
 .index_card_text {
   text-align: center;
   width: fit-content;
-  color: #ffffff8c;
 }
 
 .index_icon {
@@ -278,26 +279,30 @@ p {
   width: 40%;
 }
 
+/* ***********************Styles for images with underline caption text******************************* */
+
 .container_picture {
   width: 100%;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
     0 15px 40px rgba(166, 173, 201, 0.15);
 }
-
+/* style for image inside container */
+.image_container {
+  margin-top: 4%;
+  width: 80%;
+}
+/* style for text under image */
 .text_underline {
   color: #08080863;
   display: block;
   text-align: center;
 }
 
+/* *********************** Induvidual Image styles ******************************* */
+
 .questions_pic {
   width: 80%;
   margin: 4% 0;
-}
-
-.image_container {
-  margin-top: 4%;
-  width: 80%;
 }
 
 .logo_design {
@@ -306,6 +311,8 @@ p {
     0 15px 40px rgba(166, 173, 201, 0.15);
   margin: 5% auto 7% auto;
 }
+
+/* ***********************Styles for wireframe pictures ******************************* */
 
 .wireframe_pics_container {
   display: flex;
@@ -335,18 +342,690 @@ p {
     0 15px 40px rgba(166, 173, 201, 0.15);
 }
 
-.image_container_testing{
+/* *********************** Style for wireframe user testing ******************************* */
+
+.image_container_testing {
   display: flex;
   justify-content: center;
   margin-top: 4%;
 }
-.wireframe_testing{
-    width: 50%;
-    margin: auto;
+
+.wireframe_testing {
+  width: 50%;
+  margin: auto;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
     0 15px 40px rgba(166, 173, 201, 0.15);
 }
 
+@media only screen and (max-width: 992px) {
+  p {
+    margin: 0em;
+  }
+
+  .h1 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1em + 1vw);
+    color: #080808f6;
+  }
+
+  .h2 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.6em + 1vw);
+    color: #080808f6;
+  }
+
+  .h3 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.8em + 1vw);
+  }
+
+  .h4 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1em + 1vw);
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 0.03rem;
+  }
+
+  .sh1 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.7em + 1vw);
+    line-height: 1.2em;
+    letter-spacing: 0.03rem;
+    color: #080808b6;
+  }
+
+  .b1 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.4em + 1vw);
+    line-height: 1.6em;
+    color: #080808f6;
+  }
+
+  .b2 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.6em;
+    font-size: calc(0.4em + 1vw);
+    color: #080808f6;
+  }
+
+  .caption {
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.3em + 1vw);
+    color: #080808b6;
+  }
+
+  .caption2 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.08em + 1vw);
+    color: #080808f6;
+  }
+
+  .button1 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.2em + 1vw);
+  }
+
+  /* *******************Description Styles project explainations***************************** */
+
+  .project_name {
+    padding: 7% 0 3% 0;
+    color: #ffffff;
+  }
+
+  .project_duration {
+    padding-bottom: 8%;
+    color: #ffffffbd;
+  }
+
+  .title_image {
+    background: url(../../images/1920/chiral2.png);
+    width: 100%;
+    height: calc(30em + 3vw);
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* ***********************INDEX ICONS PROJECT HIGHLIGHTS******************************* */
+
+  .index_container {
+    width: 100%;
+    margin: 5% 40% 0 0;
+    padding: 4% 0 3% 0;
+    color: #080808b6;
+    background-color: #24a19c;
+  }
+
+  .index {
+    width: 80%;
+    height: 10rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .index_card {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .index_text {
+    text-align: center;
+    width: fit-content;
+    color: #ffffff8c;
+  }
+
+  .index_icon {
+    margin-bottom: 10%;
+    width: 50%;
+  }
+
+  /* *******************Description Styles project explainations***************************** */
+
+  .desc_container {
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .desc_title {
+    color: #080808f6;
+    padding-top: 10%;
+  }
+
+  .desc {
+    display: block;
+    padding: 2% 20% 0 0;
+    color: #080808b6;
+  }
+
+  /* ***********************Styles for images with underline caption text******************************* */
+
+  /* style for image inside container */
+  .container_picture {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  .image_container {
+    margin-top: 4%;
+    width: 80%;
+  }
+  /* style for text under image */
+  .text_underline {
+    color: #08080863;
+    display: block;
+    text-align: center;
+  }
+
+  /* *********************** Induvidual Image styles ******************************* */
+
+  .questions_pic {
+    width: 90%;
+    margin: 4% 0;
+  }
+
+  .logo_design {
+    width: 50%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+    margin: 5% auto 7% auto;
+  }
+
+  /* ***********************Styles for wireframe pictures ******************************* */
+
+  .wireframe_pics_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4%;
+    width: 80%;
+    align-items: flex-end;
+  }
+
+  .wireframe_pics {
+    width: 40%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  .mid_wireframe_pics {
+    width: 21%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  .high_wireframe_pics {
+    width: 15%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  /* *********************** Style for wireframe user testing ******************************* */
+
+  .image_container_testing {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+  .wireframe_testing {
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+  /* *******************problems card system*************************************** */
+
+  .cards_container {
+    margin: 5% 0 10% 0;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 17rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .prob_card {
+    margin: 2%;
+    width: 42%;
+    height: 7rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+    display: flex;
+    flex-flow: row;
+    justify-content: unset;
+  }
+
+  .prob_card_text {
+    margin: 5% 5% 5% 10%;
+  }
+
+  .prob_card_image {
+    margin: 3% 5% 3% 5%;
+    align-self: center;
+    width: 17%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #nav-icon3 {
+    margin-top: 1.4%;
+    width: 1.6rem;
+    height: 1rem;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+
+  #nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #b2ebf27e;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+  #nav-icon3 span:nth-child(1) {
+    top: 0px;
+  }
+
+  #nav-icon3 span:nth-child(3) {
+    top: 7px;
+  }
+
+  #nav-icon3 span:nth-child(2) {
+    top: 14px;
+  }
+
+  #nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  #nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  #nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  #nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .navbar-nav {
+    font-size: calc(2.9em + 0.5vw);
+    position: relative;
+    left: 28%;
+    color: #0808087c;
+    display: block;
+    margin: 35% 0;
+  }
+
+  .hamburger {
+    width: 1.3rem;
+    height: 0.15rem;
+    background-color: #b2ebf27e;
+  }
+
+  .nav_items {
+    position: relative;
+    display: none;
+  }
+
+  .mobile_nav {
+    text-align: center;
+    margin-top: 10%;
+  }
+  .mobile_nav_items {
+    list-style-type: none;
+    padding: 0;
+    margin: auto;
+  }
+
+  .mobile_items {
+    font-size: 3rem;
+    padding: 20% 0;
+  }
+
+  /* ***********************INDEX ICONS PROJECT HIGHLIGHTS******************************* */
+
+  .index_container {
+    width: 100%;
+    margin: 5% 40% 0 0;
+    padding: 4% 0 3% 0;
+    color: #080808b6;
+    background-color: #24a19c;
+  }
+
+  .index {
+    width: 80%;
+    height: 8rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .index_card {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .index_text {
+    text-align: center;
+    width: fit-content;
+    color: #ffffff8c;
+  }
+
+  .index_icon {
+    margin-bottom: 10%;
+    width: 50%;
+  }
+
+  /* *******************Description Styles project explainations***************************** */
+
+  .desc_container {
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .desc_title {
+    color: #080808f6;
+    padding-top: 10%;
+  }
+
+  .desc {
+    display: block;
+    padding: 2% 10% 0 0;
+    color: #080808b6;
+  }
+
+  /* *******************problems card system*************************************** */
+
+  .cards_container {
+    margin: 5% 0 10% 0;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 22em;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .prob_card {
+    margin: 2%;
+    width: 42%;
+    height: 5.5rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+    display: flex;
+    flex-flow: row;
+    justify-content: unset;
+  }
+
+  .prob_card_text {
+    margin: 5% 5% 5% 10%;
+  }
+
+  .prob_card_image {
+    margin: 3% 5% 3% 5%;
+    align-self: center;
+    width: 17%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* ********************************** Header Styles ************************************************************ */
+  .project_name {
+    padding: 7% 0 3% 0;
+    color: #ffffff;
+  }
+
+  .project_duration {
+    padding-bottom: 7%;
+    color: #ffffffbd;
+  }
+
+  .title_image {
+    background: url(../../images/1920/2.png);
+    width: 100%;
+    height: 35vh;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* *******************Description Styles project explainations***************************** */
+
+  .desc_container {
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+  }
+
+  .desc_title {
+    color: #080808f6;
+    padding-top: 10%;
+  }
+
+  .desc {
+    display: block;
+    padding: 2% 0 0 0;
+    color: #080808b6;
+  }
+
+  .user_pic {
+    width: 100%;
+    margin: 10% 0;
+  }
+
+  /* ***********************INDEX ICONS PROJECT HIGHLIGHTS******************************* */
+
+  .index_container {
+    width: 100%;
+    height: unset;
+    margin: 5% 40% 0 0;
+    padding: 0;
+    color: #080808b6;
+    background-color: #0055ffbe;
+  }
+
+  .index {
+    width: 80%;
+    height: 9rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .index_card {
+    width: 100%;
+    height: 38%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .index_card_text {
+    margin: 0;
+    text-align: center;
+    width: fit-content;
+    color: #ffffff8c;
+  }
+
+  .index_picture {
+    margin-bottom: 1.1rem;
+    width: unset;
+    height: 50%;
+  }
+
+  /* *******************problems card system*************************************** */
+
+  .cards_container {
+    margin: 5% 0 10% 0;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 9rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .prob_card {
+    margin: 2%;
+    width: 40%;
+    height: 4rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+    display: flex;
+    flex-flow: row;
+    justify-content: unset;
+  }
+
+  .prob_card_text {
+    margin: 5% 5% 5% 10%;
+  }
+
+  .prob_card_image {
+    margin: 3% 5% 3% 5%;
+    align-self: center;
+    width: 17%;
+  }
+
+  /* ***********************Styles for images with underline caption text******************************* */
+
+  /* style for image inside container */
+  .container_picture {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  .image_container {
+    margin-top: 4%;
+    width: 100%;
+  }
+  /* style for text under image */
+  .text_underline {
+    color: #08080863;
+    display: block;
+    text-align: center;
+  }
+
+  /* *********************** Induvidual Image styles ******************************* */
+
+  .questions_pic {
+    width: 100%;
+    margin: 4% 0;
+  }
+
+  .logo_design {
+    display: block;
+    margin: 5% auto 0 auto;
+    width: 50%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  /* ***********************Styles for wireframe pictures ******************************* */
+
+  .wireframe_pics_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 4%;
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  .wireframe_pics {
+    width: 40%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  .mid_wireframe_pics {
+    width: 21%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  .high_wireframe_pics {
+    width: 15%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+
+  /* *********************** Style for wireframe user testing ******************************* */
+
+  .image_container_testing {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+  }
+
+  .wireframe_testing {
+    width: 50%;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
+      0 15px 40px rgba(166, 173, 201, 0.15);
+  }
+}
 
 /* SD notes
 

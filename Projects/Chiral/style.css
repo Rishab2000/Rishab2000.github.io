@@ -837,7 +837,7 @@ p {
   }
 
   .title_image {
-    background: url(../../images/1920/2.png);
+    background: url(../../images/1920/chiral2.png);
     width: 100%;
     height: 35vh;
     background-attachment: scroll;
@@ -878,7 +878,7 @@ p {
     margin: 5% 40% 0 0;
     padding: 0;
     color: #080808b6;
-    background-color: #0055ffbe;
+    background-color: #24a19c;
   }
 
   .index {

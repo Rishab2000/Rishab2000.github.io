@@ -977,7 +977,7 @@ p {
   .logo_design {
     display: block;
     margin: 5% auto 0 auto;
-    width: 50%;
+    width: 60%;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
       0 15px 40px rgba(166, 173, 201, 0.15);
   }
@@ -1021,7 +1021,7 @@ p {
   }
 
   .wireframe_testing {
-    width: 50%;
+    width: 70%;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
       0 15px 40px rgba(166, 173, 201, 0.15);
   }

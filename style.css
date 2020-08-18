@@ -354,7 +354,6 @@ p {
 }
 
 @media only screen and (max-width: 992px) {
-
   p {
     margin: 0em;
   }
@@ -527,7 +526,7 @@ p {
   .button_right {
     text-align: center;
     border-style: solid;
-    border-width: medium;
+    border-width: 3px;
     width: 7%;
     margin: 5% 10.2% 10% 10.2%;
     color: #ff2d55;
@@ -536,7 +535,7 @@ p {
   .button_left {
     text-align: center;
     border-style: solid;
-    border-width: medium;
+    border-width: 3px;
     /* background-color: darkblue; */
     width: 7%;
     margin: 5% 10.2% 10% 10.2%;
@@ -716,10 +715,28 @@ p {
     width: 100%;
     height: 100%;
   }
+
+  .button_right {
+    text-align: center;
+    border-style: solid;
+    border-width: 2.4px;
+    width: 7%;
+    margin: 5% 10.2% 10% 10.2%;
+    color: #ff2d55;
+  }
+
+  .button_left {
+    text-align: center;
+    border-style: solid;
+    border-width: 2.4px;
+    /* background-color: darkblue; */
+    width: 7%;
+    margin: 5% 10.2% 10% 10.2%;
+    color: #ff2d55;
+  }
 }
 
 @media only screen and (max-width: 576px) {
-
   #nav-icon3 {
     margin-top: 1.4%;
     width: 1.6rem;
@@ -827,7 +844,7 @@ p {
     font-size: 3rem;
     padding: 20% 0;
   }
-  
+
   .intro_text2 {
     padding-right: 45%;
     margin: 10% 0 20% 0;
@@ -880,7 +897,7 @@ p {
   .button_right {
     text-align: center;
     border-style: solid;
-    border-width: medium;
+    border-width: 2.3px;
     /* background-color: darkblue; */
     width: 7%;
     margin: 5% 10.2% 10% 10.2%;
@@ -890,7 +907,7 @@ p {
   .button_left {
     text-align: center;
     border-style: solid;
-    border-width: medium;
+    border-width: 2.3px;
     /* background-color: darkblue; */
     width: 7%;
     margin: 5% 10.2% 10% 10.2%;

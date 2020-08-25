@@ -148,6 +148,7 @@ p {
 }
 
 .mobile_nav {
+  color: #b2ebf27e;
   display: none;
 }
 
@@ -521,7 +522,6 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-
   .intro_text1 {
     margin-top: 0;
   }
@@ -611,7 +611,6 @@ p {
   .hamburger {
     width: 1.3rem;
     height: 0.15rem;
-    background-color: #b2ebf27e;
   }
 
   .nav_items {
@@ -620,6 +619,7 @@ p {
   }
 
   .mobile_nav {
+    color: #b2ebf27e;
     text-align: center;
     margin-top: 10%;
   }
@@ -730,7 +730,6 @@ p {
 }
 
 @media only screen and (max-width: 576px) {
-  
   #nav-icon3 {
     margin-top: 1.4%;
     width: 1.6rem;
@@ -752,7 +751,7 @@ p {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: black;
+    background: white;
     border-radius: 9px;
     opacity: 1;
     left: 0;

@@ -6,6 +6,7 @@ $(document).ready(function () {
 
 function menuSlide() {
  $('.mobile_nav').toggleClass("show")
+ $('.mobile_nav').toggleClass("toggle")
  $('.nav-icon3-bar').toggleClass("nav-icon3-black")
 }
 

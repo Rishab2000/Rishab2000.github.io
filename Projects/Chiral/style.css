@@ -749,6 +749,10 @@ p {
     opacity: 1 !important;
   }
 
+  .hide {
+    visibility: hidden !important;
+  }
+
   .mobile_nav_items {
     text-align: center;
     list-style-type: none;

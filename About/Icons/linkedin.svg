@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+<style type="text/css">
+	.st0{fill:#2C2C2E;}
+</style>
+<path class="st0" d="m511.9 512h0.1v-187.8c0-91.9-19.8-162.6-127.2-162.6-51.6 0-86.3 28.3-100.4 55.2h-1.5v-46.6h-101.8v341.8h106v-169.3c0-44.6 8.4-87.7 63.6-87.7 54.4 0 55.2 50.9 55.2 90.5v166.5h106z"/>
+<path class="st0" d="M8.4,170.2h106.2V512H8.4L8.4,170.2z"/>
+<path class="st0" d="M61.5,0C27.5,0,0,27.5,0,61.5s27.5,62.1,61.5,62.1S123,95.4,123,61.5C122.9,27.5,95.4,0,61.5,0z"/>
+</svg>

@@ -1,10 +1,17 @@
+:root {
+  --title-colour: rgb(44, 44, 46);
+  --desc-colour: rgb(44, 44, 46, 0.83);
+  --link-colour: #be203d;
+  --bg-colour: rgb(242, 242, 247);
+}
+
 body {
   width: 100%;
   height: 100vh;
   padding-top: 1px;
   margin: -1px 0 0 0;
   box-sizing: border-box;
-  background: #fdfdfe;
+  background: var(--bg-colour);
 }
 
 @font-face {
@@ -38,29 +45,39 @@ a {
 }
 
 a:hover {
-  color: #be203d !important;
+  color: var(--link-colour) !important;
 }
 
 p {
   margin: 0em;
 }
 
+footer {
+  margin: 10% auto 2% auto;
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  border-top: 1px solid rgba(8, 8, 8, 0.14);
+}
+
 .h1 {
   font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(1.1em + 1vw);
-  color: #080808b6;
+  color: var(--title-colour);
 }
 
 .h2 {
   font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(1em + 0.5vw);
-  color: #080808b6;
+  color: var(--title-colour);
 }
 
 .h3 {
   font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.7em + 1vw);
-  color: #080808b6;
+  color: var(--title-colour);
 }
 
 .h4 {
@@ -69,16 +86,15 @@ p {
   font-weight: 600;
   line-height: 1.2em;
   letter-spacing: 0.03rem;
-  color: #080808b6;
+  color: var(--title-colour);
 }
 
 .h5 {
   font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.5em + 1vw);
-  font-weight: 600;
-  line-height: 1.2em;
+  line-height: 1.4em;
   letter-spacing: 0.03rem;
-  color: #080808b6;
+  color: var(--title-colour);
 }
 
 .h6 {
@@ -87,7 +103,7 @@ p {
   font-weight: 600;
   line-height: 1.2em;
   letter-spacing: 0.03rem;
-  color: #080808b6;
+  color: var(--title-colour);
 }
 
 .sh1 {
@@ -95,14 +111,14 @@ p {
   font-size: calc(0.4em + 1vw);
   line-height: 1.2em;
   letter-spacing: 0.03rem;
-  color: #080808b6;
+  color: var(--desc-colour);
 }
 
 .b1 {
   font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.3em + 1vw);
   line-height: 1.6em;
-  color: #080808b6;
+  color: var(--desc-colour);
 }
 
 .b2 {
@@ -110,20 +126,21 @@ p {
   font-weight: normal;
   line-height: 1.6em;
   font-size: calc(0.2em + 1vw);
-  color: #080808b6;
+  color: var(--desc-colour);
 }
 
 .caption {
   font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
   line-height: 1.6em;
   font-size: calc(0.05em + 1vw);
-  color: #080808b6;
+  color: var(--desc-colour);
 }
 
 .caption2 {
   font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
   line-height: 1.6em;
   font-size: calc(0.05em + 1vw);
+  color: rgb(44, 44, 46, 0.38);
 }
 
 .header_container {
@@ -198,14 +215,12 @@ p {
 }
 
 .desc_title {
-  color: #080808f6;
   padding-top: 10%;
 }
 
 .desc {
   display: block;
   padding: 2% 40% 0 0;
-  color: #080808b6;
 }
 
 /* ***********************INDEX ICONS PROJECT HIGHLIGHTS******************************* */
@@ -214,7 +229,6 @@ p {
   width: 100%;
   margin: 5% 40% 0 0;
   padding: 4% 0 3% 0;
-  color: #080808b6;
   background-color: #0055ffbe;
 }
 
@@ -315,6 +329,48 @@ p {
   display: none;
 }
 
+/* footer styles */
+
+.contact-mail {
+  color: rgba(0, 0, 0, 0.38);
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  align-self: start;
+  height: 100%;
+  width: 25%;
+}
+
+.social-icons-container {
+  display: flex;
+  flex-flow: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 7%;
+}
+.social-icons {
+  height: 1.5rem;
+}
+
+.icons {
+  height: inherit;
+}
+.icons:hover ~ .underline {
+  width: 100%;
+}
+.underline {
+  display: block;
+  width: 0%;
+  border-top: 2px solid rgba(0, 0, 0, 0.14);
+  transition: width 0.2s ease-in-out;
+}
+
 @media only screen and (max-width: 992px) {
   p {
     margin: 0em;
@@ -323,13 +379,11 @@ p {
   .h1 {
     font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(1em + 1vw);
-    color: #080808f6;
   }
 
   .h2 {
     font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.6em + 1vw);
-    color: #080808f6;
   }
 
   .h3 {
@@ -347,11 +401,9 @@ p {
 
   .h5 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.4em + 1vw);
-    font-weight: 600;
-    line-height: 1.2em;
+    font-size: calc(0.5em + 1vw);
+    line-height: 1.4em;
     letter-spacing: 0.03rem;
-    color: #080808b6;
   }
 
   .h6 {
@@ -360,7 +412,6 @@ p {
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0.03rem;
-    color: #080808b6;
   }
 
   .sh1 {
@@ -368,14 +419,12 @@ p {
     font-size: calc(0.7em + 1vw);
     line-height: 1.2em;
     letter-spacing: 0.03rem;
-    color: #080808b6;
   }
 
   .b1 {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.4em + 1vw);
     line-height: 1.6em;
-    color: #080808f6;
   }
 
   .b2 {
@@ -383,21 +432,19 @@ p {
     font-weight: normal;
     line-height: 1.6em;
     font-size: calc(0.4em + 1vw);
-    color: #080808f6;
   }
 
   .caption {
     font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
     line-height: 1.6em;
     font-size: calc(0.3em + 1vw);
-    color: #080808b6;
   }
 
   .caption2 {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     line-height: 1.6em;
-    font-size: calc(0.08em + 1vw);
-    color: #080808f6;
+    font-size: calc(0.3em + 1vw);
+
   }
 
   .button1 {
@@ -432,7 +479,6 @@ p {
     width: 100%;
     margin: 5% 40% 0 0;
     padding: 4% 0 3% 0;
-    color: #080808b6;
     background-color: #0055ffbe;
   }
 
@@ -558,6 +604,15 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+  footer {
+    padding-top: 5%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: 1px solid rgba(8, 8, 8, 0.14);
+  }
+
   .intro_text1 {
     margin-top: 0;
   }
@@ -580,7 +635,7 @@ p {
   }
 
   .nav-icon3-bar {
-    background: white;
+    background: var(--bg-colour);
     z-index: 200;
     display: block;
     position: absolute;
@@ -600,7 +655,7 @@ p {
   }
 
   .nav-icon3-black {
-    background-color: black;
+    background-color: var(--title-colour);
   }
   .nav-icon3 span:nth-child(1) {
     top: 0px;
@@ -655,7 +710,7 @@ p {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: var(--bg-colour);
     transition: opacity 0.5s;
     opacity: 0;
   }
@@ -667,7 +722,7 @@ p {
   }
 
   .hide {
-    visibility: hidden !important;
+    visibility: hidden;
   }
 
   .mobile_nav_items {
@@ -687,8 +742,6 @@ p {
     width: 100%;
     margin: 5% 40% 0 0;
     padding: 4% 0 3% 0;
-    color: #080808b6;
-    background-color: #0055ffbe;
   }
 
   .index {
@@ -731,14 +784,12 @@ p {
   }
 
   .desc_title {
-    color: #080808f6;
     padding-top: 10%;
   }
 
   .desc {
     display: block;
     padding: 2% 10% 0 0;
-    color: #080808b6;
   }
 
   /* *******************problems card system*************************************** */
@@ -774,6 +825,17 @@ p {
     align-self: center;
     width: 17%;
   }
+
+  /* footer styles */
+
+  .social-icons {
+    height: 1.3rem;
+  }
+
+  .social-links {
+    margin-top: 5%;
+    width: 40%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -800,7 +862,7 @@ p {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: white;
+    background: var(--bg-colour);
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -816,7 +878,7 @@ p {
   }
 
   .nav-icon3-black {
-    background-color: black;
+    background-color: var(--title-colour);
   }
   .nav-icon3 span:nth-child(1) {
     top: 0px;
@@ -905,14 +967,12 @@ p {
   }
 
   .desc_title {
-    color: #080808f6;
     padding-top: 10%;
   }
 
   .desc {
     display: block;
     padding: 2% 0 0 0;
-    color: #080808b6;
   }
 
   .user_pic {
@@ -927,7 +987,6 @@ p {
     height: unset;
     margin: 5% 40% 0 0;
     padding: 0;
-    color: #080808b6;
     background-color: #0055ffbe;
   }
 
@@ -995,5 +1054,12 @@ p {
     margin: 3% 5% 3% 5%;
     align-self: center;
     width: 17%;
+  }
+
+  /* footer styles */
+
+  .social-links {
+    margin-top: 10%;
+    width: 50%;
   }
 }

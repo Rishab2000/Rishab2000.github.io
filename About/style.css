@@ -5,7 +5,7 @@
 :root {
   --text-colour: rgba(44, 44, 46);
   --link-colour: #be203d;
-  --bg-colour:  rgb(242,242,247)
+  --bg-colour: rgb(242, 242, 247);
 }
 body {
   width: 100%;
@@ -125,6 +125,13 @@ footer {
   font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.03em + 1vw);
   color: var(--text-colour);
+}
+
+.caption2 {
+  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+  font-size: calc(0.05em + 1vw);
+  color: rgb(44, 44, 46, 0.38);
 }
 
 .header {
@@ -314,6 +321,12 @@ footer {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.2em + 1vw);
   }
+
+  .caption2 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.3em + 1vw);
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -385,7 +398,7 @@ footer {
     top: 18px;
     width: 0%;
     left: 50%;
-  } 
+  }
 
   .nav-icon3.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
@@ -444,8 +457,8 @@ footer {
   }
 
   .image_me {
-  width: 50%;
-}
+    width: 50%;
+  }
 
   .social-icons {
     height: 1.3rem;

@@ -385,7 +385,7 @@ footer {
     top: 18px;
     width: 0%;
     left: 50%;
-  }
+  } 
 
   .nav-icon3.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
@@ -442,6 +442,10 @@ footer {
   .mobile_items {
     padding: 10% 0 0 0;
   }
+
+  .image_me {
+  width: 50%;
+}
 
   .social-icons {
     height: 1.3rem;

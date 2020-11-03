@@ -92,7 +92,7 @@ footer {
 .h5 {
   font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.5em + 1vw);
-  line-height: 1.4em;
+  line-height: 2.2em;
   letter-spacing: 0.03rem;
   color: var(--title-colour);
 }
@@ -100,7 +100,7 @@ footer {
 .h6 {
   font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.2em + 1vw);
-  line-height: 1.2em;
+  line-height: 2.2em;
   letter-spacing: 0.03rem;
   color: var(--title-colour);
 }
@@ -108,7 +108,7 @@ footer {
 .sh1 {
   font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.4em + 1vw);
-  line-height: 1.2em;
+  line-height: 2.2em;
   letter-spacing: 0.03rem;
   color: var(--desc-colour);
 }
@@ -319,7 +319,7 @@ footer {
 }
 
 .logo_design {
-  width: 50%;
+  width: 40%;
   box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
     0 15px 40px rgba(166, 173, 201, 0.15);
   margin: 5% auto 0 auto;
@@ -609,7 +609,7 @@ footer {
   }
 
   .logo_design {
-    width: 50%;
+    width: 40%;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
       0 15px 40px rgba(166, 173, 201, 0.15);
     margin: 5% auto 0 auto;
@@ -1180,7 +1180,7 @@ footer {
   .logo_design {
     display: block;
     margin: 5% auto 0 auto;
-    width: 60%;
+    width: 50%;
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.01),
       0 15px 40px rgba(166, 173, 201, 0.15);
   }

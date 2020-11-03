@@ -1,0 +1,457 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --title-colour: rgb(44, 44, 46);
+  --desc-colour: #2c2c2e;
+  --link-colour: #be203d;
+  --bg-colour: rgb(242, 242, 247);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  margin: -1px 0 0 0;
+  box-sizing: border-box;
+  background: var(--bg-colour);
+}
+
+@font-face {
+  font-family: "avenir-roman";
+  src: url(/Fonts/Avenir/Avenir-Roman.ttf);
+}
+
+@font-face {
+  font-family: "avenir-book";
+  src: url(/Fonts/Avenir/Avenir-Book.ttf);
+}
+
+@font-face {
+  font-family: "avenir-medium";
+  src: url(/Fonts/Avenir/Avenir-Medium.ttf);
+}
+
+@font-face {
+  font-family: "avenir-bold";
+  src: url(/Fonts/Avenir/Avenir-Heavy.ttf);
+}
+
+@font-face {
+  font-family: "avenir-black";
+  src: url(/Fonts/Avenir/Avenir-Black.ttf);
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--link-colour) !important;
+}
+
+li {
+  margin-left: 2.5%;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  margin: 10% auto 2% auto;
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  border-top: 1px solid rgba(8, 8, 8, 0.14);
+}
+
+div {
+  cursor: default;
+}
+
+
+.h1 {
+  font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(1.1em + 1vw);
+  color: var(--title-colour);
+}
+
+.h2 {
+  font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(1em + 0.5vw);
+  color: var(--title-colour);
+}
+
+.h3 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.7em + 1vw);
+  color: var(--title-colour);
+}
+
+.h4 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.7em + 1vw);
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0.03rem;
+  color: var(--title-colour);
+}
+
+.h5 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.5em + 1vw);
+  line-height: 1.4em;
+  letter-spacing: 0.03rem;
+  color: var(--title-colour);
+}
+
+.h6 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.2em + 1vw);
+  line-height: 1.2em;
+  letter-spacing: 0.03rem;
+  color: var(--title-colour);
+}
+
+.sh1 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.4em + 1vw);
+  line-height: 2.2em;
+  letter-spacing: 0.03rem;
+  color: var(--desc-colour);
+}
+
+.b1 {
+  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: calc(0.3em + 1vw);
+  line-height: 1.5;
+  color: var(--desc-colour);
+}
+
+.b2 {
+  font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: calc(0.2em + 1vw);
+  color: var(--desc-colour);
+}
+
+.caption {
+  font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+  font-size: calc(0.05em + 1vw);
+  color: var(--desc-colour);
+}
+
+.caption2 {
+  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+  font-size: calc(0.09em + 1vw);
+  color: rgb(44, 44, 46, 0.78);
+}
+
+.header_container {
+  background-image: linear-gradient(160deg, #1FDEDB 0, #42E198);
+}
+
+.header {
+  width: 80%;
+  padding-top: 7%;
+  margin: 0 auto 0 auto;
+  height: max-content;
+}
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_container .h1 {
+  color: rgb(242, 242, 247, 0.78);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav_container .h2 {
+  color: rgb(242, 242, 247, 0.78);
+}
+
+/* color: #b2ebf2; */
+
+.nav_items {
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin: 0.6% 0 0 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.link_items {
+  padding-left: 3rem;
+}
+
+.mobile_nav {
+  display: none;
+}
+
+.project_name {
+  padding: 7% 0 3% 0;
+  color: #ffffff;
+}
+
+.project_duration {
+  padding-bottom: 8%;
+  color: #ffffffbd;
+}
+
+.title_image {
+  background: url(../../images/1920/chiral2.png);
+  background-attachment: fixed;
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+
+/* *******************Description Styles project explainations***************************** */
+
+.desc_container {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  height: fit-content;
+}
+
+.desc_title {
+  padding-top: 10%;
+}
+
+.desc {
+  display: block;
+  padding: 2% 40% 0 0;
+}
+
+
+/* ***********************problem statement******************************* */
+
+.bck_container.problem {
+  width: 100%;
+  margin: 10% 40% 5% 0;
+  padding: 4% 0 4% 0;
+  background-color: #3BC7EE;
+}
+
+/* ***********************About product******************************* */
+
+.bck_container.about {
+  width: 100%;
+  margin: 8% 40% 0 0;
+  padding-top: 4%;
+  background-color: rgb(228, 228, 238, 0.38);
+}
+
+.desc_container_about {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 80%;
+  height: fit-content;
+}
+
+.desc_about {
+  display: inline-block;
+  width: 45%;
+}
+
+.desc_container_about .desc_title {
+  width: 100%;
+  padding: 0 0 2% 0;
+}
+
+
+
+/* ***********************Image Styles******************************* */
+
+/* style for text under image */
+.text_overline,
+.text_underline {
+  color: #08080863;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.text_overline {
+  margin-top: 6%;
+}
+
+.text_underline {
+  margin-top: 3%;
+}
+
+.pre_design {
+  width: 48%;
+  margin: 2% 0 10% 0;
+}
+
+.img_long {
+  margin-top: 5%;
+  width: 100%;
+}
+
+/* ***********************GIF STYLES******************************* */
+
+.img_gif {
+  display: block;
+  text-align: center;
+  margin: 10% auto 0 auto;
+  width: 50%;
+}
+
+.gif_text {
+  color: rgb(72, 72, 74, 0.38);
+}
+
+/* ***********************Probelem section Styles******************************* */
+
+.desc.b2.prob {
+  display: block;
+  padding: 2% 50% 0 0;
+}
+
+.desc.b2.realized {
+  display: block;
+  padding: 2% 0% 0 50%;
+}
+
+.index {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 20vh;
+}
+
+.index_card {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.index_card_text {
+  text-align: center;
+  width: fit-content;
+}
+
+.index_icon {
+  margin-bottom: 10%;
+  width: 40%;
+}
+
+/* ***********************PROBLEM STATEMENT STYLES******************************* */
+
+.problem {
+  color: rgb(242, 242, 247);
+}
+
+/* ***********************SVG STYLES******************************* */
+
+.my_comments_prob {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  width: 40%;
+}
+
+.my_comments_probsol {
+  position: absolute;
+  top: -90%;
+  right: 60%;
+  width: 40%;
+}
+
+/* ***********************MORE TEXT STYLES******************************* */
+
+.more_button {
+  margin-left: 80%;
+  display: block;
+  opacity: 100%;
+  color: #ff2d55;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.more_button:hover {
+  color: var(--link-colour);
+}
+
+.more_button_hide {
+  display: none;
+  opacity: 0%;
+}
+
+.research_moreList,
+.research_moreText {
+  display: none;
+  opacity: 0%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.research_moreList_show {
+  display: list-item;
+  opacity: 100%;
+}
+
+.research_moreText_show {
+  display: block;
+  opacity: 100%;
+}
+
+.is-transitioningList {
+  display: list-item !important;
+  visibility: visible !important;
+}
+
+.is-transitioningText {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* ***********************PROBLEM ICONS STYLES******************************* */
+
+.probs_icons_container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.prob_items{
+  width: 25%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: rgb(229, 229, 234, 0.50);
+  padding: 1.5rem;
+}
+
+.prob_icons{
+  height: 40%;
+}
+
+.prob_text{
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10%;
+}

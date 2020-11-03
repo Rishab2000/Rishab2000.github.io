@@ -173,7 +173,7 @@ p {
   color: var(--desc-colour);
 }
 
-.caption{
+.caption {
   font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.05em + 1vw);
   color: rgb(44, 44, 46, 0.38);
@@ -280,7 +280,6 @@ p {
 }
 
 .container_right {
-  float: right;
   width: 40%;
   height: calc(32rem + 10vw);
   display: flex;
@@ -311,7 +310,7 @@ p {
 }
 
 .first {
-  background: url("images/1920/2.png");
+  background: url("images/1920/sdpluspng.webp");
   background-size: cover;
   background-position: 51% 0px;
   background-repeat: no-repeat;
@@ -320,7 +319,8 @@ p {
 }
 
 .second {
-  background: url("images/1920/ZARA_Cover2.png");
+  background: url("images/1920/chiral2.png");
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 51% 0;
@@ -331,7 +331,8 @@ p {
 }
 
 .third {
-  background: url("images/1920/chiral2.png");
+  background: url("images/1920/2.png");
+  /* background: url("images/1920/chiral2.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 51% 0px;
@@ -340,7 +341,7 @@ p {
 }
 
 .fourth {
-  background: url("images/iPhone\ X_MockUp2.png");
+  background: url("images/1920/ZARA_Cover2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 51%;
@@ -502,11 +503,11 @@ p {
     font-size: calc(0.2em + 1vw);
   }
 
-  .caption{
-  font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: calc(0.2em + 1vw);
-  color: rgb(44, 44, 46, 0.38);
-}
+  .caption {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.2em + 1vw);
+    color: rgb(44, 44, 46, 0.38);
+  }
 
   .intro_text1 {
     margin-top: 10%;
@@ -1083,7 +1084,7 @@ p {
     width: 100%;
     height: 100%;
   }
-  
+
   /* footer styles */
 
   .social-links {

@@ -842,27 +842,28 @@ footer {
 }
 
 @media only screen and (max-width: 576px) {
+  
   .h1 {
     font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(1.1em + 1vw);
+    font-size: calc(1.3em + 1vw);
     color: var(--title-colour);
   }
 
   .h2 {
     font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(1em + 1vw);
+    font-size: calc(1.2em + 1vw);
     color: var(--title-colour);
   }
 
   .h3 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(0.9em + 1vw);
     color: var(--title-colour);
   }
 
   .h4 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(0.9em + 1vw);
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0.03rem;
@@ -871,7 +872,7 @@ footer {
 
   .h5 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.7em + 1vw);
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0.03rem;
@@ -880,7 +881,7 @@ footer {
 
   .h6 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.2em + 1vw);
+    font-size: calc(0.4em + 1vw);
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0.03rem;
@@ -889,30 +890,32 @@ footer {
 
   .sh1 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(0.9em + 1vw);
+    margin-bottom: 3%;
+    line-height: 1.6rem;
     letter-spacing: 0.03rem;
     color: var(--desc-colour);
   }
 
   .b1 {
-    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.6em + 1vw);
-    line-height: 1.6em;
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.8em + 1vw);
+    line-height: 1.4em;
     color: var(--desc-colour);
   }
 
   .b2 {
-    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: 1.6em;
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.7em + 1vw);
     color: var(--desc-colour);
   }
 
   .b3 {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     letter-spacing: 0.5px;
-    font-size: calc(0.25em + 1vw);
+    font-size: calc(0.4em + 1vw);
     color: var(--desc-colour);
   }
 
@@ -934,6 +937,7 @@ footer {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.2em + 1vw);
   }
+
 
 
   .nav-icon3 {
@@ -1038,7 +1042,8 @@ footer {
 
   /* ********************************** Header Styles ************************************************************ */
   .project_name {
-    padding: 7% 0 3% 0;
+    padding: 0;
+    margin: 10% 0 8% 0;
     color: #ffffff;
   }
 
@@ -1046,7 +1051,6 @@ footer {
     padding-bottom: 7%;
     color: #ffffffbd;
   }
-
   .title_image {
     width: 100%;
     height: calc(24em + 3vw);
@@ -1070,6 +1074,7 @@ footer {
 
   .desc {
     display: block;
+    margin-top: 2%;
     padding: 2% 0 0 0;
   }
 

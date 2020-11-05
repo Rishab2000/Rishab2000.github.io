@@ -858,6 +858,91 @@ p {
 }
 
 @media only screen and (max-width: 576px) {
+
+  .h1 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1.3em + 1vw);
+  }
+
+  .h2 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1.2em + 1vw);
+  }
+
+  .h3 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.9em + 1vw);
+  }
+
+  .h4 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.9em + 1vw);
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 0.03rem;
+  }
+
+  .h5 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.7em + 1vw);
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 0.03rem;
+  }
+
+  .h6 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.4em + 1vw);
+    font-weight: 600;
+    line-height: 1.2em;
+    letter-spacing: 0.03rem;
+  }
+
+  .sh1 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.9em + 1vw);
+    margin-bottom: 3%;
+    line-height: 1.6rem;
+    letter-spacing: 0.03rem;
+  }
+
+  .b1 {
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.8em + 1vw);
+    line-height: 1.4em;
+  }
+
+  .b2 {
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.6em;
+    font-size: calc(0.7em + 1vw);
+  }
+
+  .b3 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: calc(0.4em + 1vw);
+  }
+
+  .caption {
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.3em + 1vw);
+  }
+
+  .caption2 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.3em + 1vw);
+  }
+
+  .button1 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.4em + 1vw);
+  }
+
+
   .nav-icon3 {
     z-index: 200;
     margin-top: 1.4%;
@@ -954,7 +1039,7 @@ p {
   }
 
   .intro_text2 {
-    padding-right: 45%;
+    padding-right: 10%;
     margin: 10% 0 20% 0;
     clear: both;
   }
@@ -989,31 +1074,31 @@ p {
 
   .desc_right {
     text-align: left;
-    padding: 5% 40% 0px 10%;
+    padding: 5% 10% 0px 10%;
     color: #727272;
   }
 
   .desc_left {
     text-align: left;
-    padding: 5% 40% 0px 10%;
+    padding: 5% 10% 0px 10%;
     color: #727272;
   }
 
   .button_right {
     text-align: center;
     border-style: solid;
-    border-width: 2.3px;
+    border-width: 2.7px;
     /* background-color: darkblue; */
-    width: 7%;
+    width: 13%;
     margin: 5% 10.2% 10% 10.2%;
   }
 
   .button_left {
     text-align: center;
     border-style: solid;
-    border-width: 2.3px;
+    border-width: 2.7px;
     /* background-color: darkblue; */
-    width: 7%;
+    width: 13%;
     margin: 5% 10.2% 10% 10.2%;
   }
 

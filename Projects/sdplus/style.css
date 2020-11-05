@@ -682,7 +682,6 @@ hr {
   }
 
   .title_image {
-    background: url(../../images/1920/chiral2.png);
     width: 100%;
     height: calc(30em + 3vw);
     background-attachment: scroll;
@@ -1078,7 +1077,7 @@ hr {
   .b1 {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.8em + 1vw);
-    line-height: 1.6em;
+    line-height: 1.4em;
     color: var(--desc-colour);
   }
 
@@ -1219,7 +1218,7 @@ hr {
 
   /* ********************************** Header Styles ************************************************************ */
   .project_name {
-    padding: 7% 0 3% 0;
+    margin: 7% 0 3% 0;
     color: #ffffff;
   }
 
@@ -1229,9 +1228,8 @@ hr {
   }
 
   .title_image {
-    background: url(../../images/1920/chiral2.png);
     width: 100%;
-    height: calc(24em + 3vw);
+    height: calc(21em + 3vw);
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;

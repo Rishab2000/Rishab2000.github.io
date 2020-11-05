@@ -522,7 +522,6 @@ footer {
   }
 
   .title_image {
-    background: url(../../images/1920/chiral2.png);
     width: 100%;
     height: calc(30em + 3vw);
     background-attachment: scroll;
@@ -1149,7 +1148,6 @@ footer {
   }
 
   .title_image {
-    background: url(../../images/1920/chiral2.png);
     width: 100%;
     height: calc(24em + 3vw);
     background-attachment: scroll;

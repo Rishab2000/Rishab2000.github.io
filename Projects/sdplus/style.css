@@ -623,6 +623,7 @@ hr {
   .sh1 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.7em + 1vw);
+    line-height: 1.5rem;
     letter-spacing: 0.03rem;
     color: var(--desc-colour);
   }
@@ -794,7 +795,7 @@ hr {
   }
 
   .desc.ideas {
-    padding: 2% 20% 0 0;
+    padding: 2% 0% 0 0;
   }
 
   /* ***********************IDEAS STYLES******************************* */
@@ -978,33 +979,33 @@ hr {
 
   /* ***********************Probelem section Styles******************************* */
 
-.desc.b2.prob {
-  display: block;
-  padding: 2% 45% 0 0;
-  margin-bottom: 25%;
-}
+  .desc.b2.prob {
+    display: block;
+    padding: 2% 45% 0 0;
+    margin-bottom: 25%;
+  }
 
-.desc.b2.realized {
-  display: block;
-  padding: 2% 0% 0 45%;
-  margin-bottom: 20%;
-}
+  .desc.b2.realized {
+    display: block;
+    padding: 2% 0% 0 45%;
+    margin-bottom: 20%;
+  }
 
-/* ***********************SVG STYLES******************************* */
+  /* ***********************SVG STYLES******************************* */
 
-.my_comments_prob {
-  position: absolute;
-  top: 20%;
-  left: 55%;
-  width: 40%;
-}
+  .my_comments_prob {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    width: 40%;
+  }
 
-.my_comments_probsol {
-  position: absolute;
-  top: -30%;
-  right: 60%;
-  width: 40%;
-}
+  .my_comments_probsol {
+    position: absolute;
+    top: -30%;
+    right: 60%;
+    width: 40%;
+  }
 
   /* footer styles */
 
@@ -1069,19 +1070,21 @@ hr {
   .sh1 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.9em + 1vw);
+    margin-bottom: 3%;
+    line-height: 1.6rem;
     letter-spacing: 0.03rem;
     color: var(--desc-colour);
   }
 
   .b1 {
-    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.8em + 1vw);
     line-height: 1.4em;
     color: var(--desc-colour);
   }
 
   .b2 {
-    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: 1.6em;
     font-size: calc(0.7em + 1vw);
@@ -1091,7 +1094,7 @@ hr {
   .b3 {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     letter-spacing: 0.5px;
-    font-size: calc(0.25em + 1vw);
+    font-size: calc(0.4em + 1vw);
     color: var(--desc-colour);
   }
 
@@ -1250,7 +1253,23 @@ hr {
 
   .desc {
     display: block;
+    margin-top: 2%;
     padding: 2% 0 0 0;
+  }
+
+
+  /* ***********************GIF STYLES******************************* */
+
+  .img_gif {
+    display: block;
+    text-align: center;
+    margin: 10% auto 0 auto;
+    width: 80%;
+  }
+
+  .gif_text {
+    color: rgb(72, 72, 74, 0.38);
+    font-size: 1rem;
   }
 
   /* ***********************Probelem section Styles******************************* */
@@ -1338,66 +1357,66 @@ hr {
   }
 
   .prob_text {
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-/* ***********************WIREFRAMES STYLES******************************* */
+  /* ***********************WIREFRAMES STYLES******************************* */
 
-.wireframes_bck {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  /* align-items: center; */
-  background-color: rgb(24, 50, 119, 0.04);
-  margin-top: 5%;
-  padding: 0 0 10% 0;
-}
+  .wireframes_bck {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    background-color: rgb(24, 50, 119, 0.04);
+    margin-top: 5%;
+    padding: 0 0 10% 0;
+  }
 
-.wireframes_bck.extra {
-  margin: 0;
-  padding: 10% 0 10% 0;
-}
+  .wireframes_bck.extra {
+    margin: 0;
+    padding: 10% 0 10% 0;
+  }
 
-.wireframe_subheading {
-  margin: 5% 0 0 5%;
-  font-family: "avenir-black", "Open Sans", Helvetica, Arial, sans-serif;
-}
+  .wireframe_subheading {
+    margin: 5% 0 0 5%;
+    font-family: "avenir-black", "Open Sans", Helvetica, Arial, sans-serif;
+  }
 
-.wireframe_desc_pre,
-.wireframe_desc_post {
-  margin: 1% 0 0 5%
-}
+  .wireframe_desc_pre,
+  .wireframe_desc_post {
+    margin: 1% 0 0 5%
+  }
 
-.wireframe_desc_pre {
-  opacity: 50%;
-}
+  .wireframe_desc_pre {
+    opacity: 50%;
+  }
 
-.wireframe_container {
-  width: 80%;
-  margin: 0 auto 10% auto;
-}
+  .wireframe_container {
+    width: 80%;
+    margin: 0 auto 10% auto;
+  }
 
-.wireframe_pre,
-.wireframe_post {
-  width: 100%;
-}
+  .wireframe_pre,
+  .wireframe_post {
+    width: 100%;
+  }
 
-.desc_container.wireframes {
-  width: 80%;
-  margin-bottom: 5%;
+  .desc_container.wireframes {
+    width: 80%;
+    margin-bottom: 5%;
 
-}
+  }
 
-.desc.b2.wireframes {
-  padding: 2% 0% 0 0;
-}
+  .desc.b2.wireframes {
+    padding: 2% 0% 0 0;
+  }
 
-  
+
 
 }
 

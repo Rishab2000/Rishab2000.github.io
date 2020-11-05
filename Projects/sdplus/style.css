@@ -1025,25 +1025,25 @@ hr {
 
   .h1 {
     font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(1.1em + 1vw);
+    font-size: calc(1.3em + 1vw);
     color: var(--title-colour);
   }
 
   .h2 {
     font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(1em + 1vw);
+    font-size: calc(1.2em + 1vw);
     color: var(--title-colour);
   }
 
   .h3 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(0.9em + 1vw);
     color: var(--title-colour);
   }
 
   .h4 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(0.9em + 1vw);
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0.03rem;
@@ -1052,7 +1052,7 @@ hr {
 
   .h5 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.7em + 1vw);
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0.03rem;
@@ -1061,7 +1061,7 @@ hr {
 
   .h6 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.2em + 1vw);
+    font-size: calc(0.4em + 1vw);
     font-weight: 600;
     line-height: 1.2em;
     letter-spacing: 0.03rem;
@@ -1070,14 +1070,14 @@ hr {
 
   .sh1 {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.7em + 1vw);
+    font-size: calc(0.9em + 1vw);
     letter-spacing: 0.03rem;
     color: var(--desc-colour);
   }
 
   .b1 {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(0.6em + 1vw);
+    font-size: calc(0.8em + 1vw);
     line-height: 1.6em;
     color: var(--desc-colour);
   }
@@ -1086,7 +1086,7 @@ hr {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: normal;
     line-height: 1.6em;
-    font-size: calc(0.5em + 1vw);
+    font-size: calc(0.7em + 1vw);
     color: var(--desc-colour);
   }
 

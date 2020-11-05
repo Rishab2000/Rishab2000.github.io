@@ -237,7 +237,7 @@ hr {
 
 .desc_container {
   position: relative;
-  margin: 0 auto 10% auto;
+  margin: 0 auto 2rem auto;
   width: 80%;
   height: fit-content;
 }
@@ -694,7 +694,6 @@ hr {
 
   .desc_container {
     position: relative;
-    margin: auto;
     width: 80%;
     height: fit-content;
   }
@@ -962,7 +961,7 @@ hr {
   /* *******************Description Styles project explainations***************************** */
 
   .desc_container {
-    margin: auto;
+
     width: 80%;
     height: fit-content;
   }
@@ -1117,7 +1116,7 @@ hr {
 
   .desc_container {
     position: relative;
-    margin: 0 auto 12% auto;
+    margin: 0 auto 2rem auto;
     width: 80%;
     height: fit-content;
   }

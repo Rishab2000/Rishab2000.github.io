@@ -310,7 +310,7 @@ p {
 }
 
 .first {
-  background: url("images/1920/sdpluspng.webp");
+  background: url("images/1920/sdplus_mockup.webp");
   background-size: cover;
   background-position: 51% 0px;
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ p {
 }
 
 .second {
-  background: url("images/1920/chiral2.png");
+  background: url("images/1920/chiral2.webp");
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -331,7 +331,7 @@ p {
 }
 
 .third {
-  background: url("images/1920/2.png");
+  background: url("images/1920/2.webp");
   /* background: url("images/1920/chiral2.png"); */
   background-size: cover;
   background-repeat: no-repeat;

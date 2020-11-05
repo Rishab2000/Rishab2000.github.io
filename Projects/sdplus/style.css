@@ -353,12 +353,13 @@ hr {
 .desc.b2.prob {
   display: block;
   padding: 2% 45% 0 0;
-  margin-bottom: 15%;
+  margin-bottom: 25%;
 }
 
 .desc.b2.realized {
   display: block;
   padding: 2% 0% 0 45%;
+  margin-bottom: 20%;
 }
 
 /* ***********************PROBLEM STATEMENT STYLES******************************* */
@@ -976,6 +977,36 @@ hr {
     padding: 2% 10% 0 0;
     color: #080808b6;
   }
+
+  /* ***********************Probelem section Styles******************************* */
+
+.desc.b2.prob {
+  display: block;
+  padding: 2% 45% 0 0;
+  margin-bottom: 25%;
+}
+
+.desc.b2.realized {
+  display: block;
+  padding: 2% 0% 0 45%;
+  margin-bottom: 20%;
+}
+
+/* ***********************SVG STYLES******************************* */
+
+.my_comments_prob {
+  position: absolute;
+  top: 20%;
+  left: 55%;
+  width: 40%;
+}
+
+.my_comments_probsol {
+  position: absolute;
+  top: -30%;
+  right: 60%;
+  width: 40%;
+}
 
   /* footer styles */
 

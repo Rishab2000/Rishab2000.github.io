@@ -128,7 +128,6 @@ hr {
 .sh1 {
   font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
   font-size: calc(0.4em + 1vw);
-  line-height: 2.2em;
   letter-spacing: 0.03rem;
   color: var(--desc-colour);
 }

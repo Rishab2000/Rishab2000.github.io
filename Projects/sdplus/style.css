@@ -1024,7 +1024,7 @@ hr {
 
   .h1 {
     font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
-    font-size: calc(1.3em + 1vw);
+    font-size: calc(1.1em + 1vw);
     color: var(--title-colour);
   }
 
@@ -1243,7 +1243,7 @@ hr {
 
   .desc_container {
     position: relative;
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 3rem auto;
     width: 80%;
     height: fit-content;
   }
@@ -1293,18 +1293,28 @@ hr {
     color: rgb(242, 242, 247);
   }
 
+
+  .desc_container.problem {
+    margin: auto;
+  }
+
+  .bck_container.problem {
+    padding: 8% 0;
+    background-color: #3BC7EE;
+  }
+
   /* ***********************SVG STYLES******************************* */
 
   .my_comments_prob {
     position: unset;
     margin: auto;
-    width: 60%;
+    width: 90%;
   }
 
   .my_comments_probsol {
     position: unset;
     margin: auto;
-    width: 60%;
+    width: 90%;
   }
 
   /* ***********************About product******************************* */
@@ -1312,13 +1322,12 @@ hr {
     flex-direction: column;
   }
 
-
   .desc_about {
     width: 100%;
   }
 
   .pre_design {
-    width: 80%;
+    width: 100%;
     margin: 2% auto 10% auto;
   }
 
@@ -1415,6 +1424,13 @@ hr {
 
   .desc.b2.wireframes {
     padding: 2% 0% 0 0;
+  }
+
+  
+  .img_med {
+    display: inline;
+    margin: 5% auto 0 auto;
+    width: 100%;
   }
 
 

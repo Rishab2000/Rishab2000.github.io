@@ -266,6 +266,19 @@ iframe {
     background-color: rgb(98, 92, 214, 0.78);
 }
 
+.bck_container_end {
+    width: 100%;
+    padding: 5% 0;
+    background-color: var(--desc-colour);
+    color: var(--bg-colour);
+    text-align: center;
+}
+
+.b1.link {
+    display: block;
+    margin-top: 0.5rem;
+}
+
 .desc_container.main {
     height: 100%;
     padding: 0 5% 4rem 5%;
@@ -332,6 +345,53 @@ iframe {
 .space {
     margin: 1rem 0 0 0;
 }
+
+
+/* footer styles */
+
+.contact-mail {
+    color: rgba(0, 0, 0, 0.38);
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: start;
+    height: 100%;
+    width: 25%;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.social-icons {
+    height: 1.5rem;
+}
+
+.icons {
+    height: inherit;
+}
+
+.icons:hover~.underline {
+    width: 100%;
+}
+
+.underline {
+    display: block;
+    width: 0%;
+    border-top: 2px solid rgba(0, 0, 0, 0.14);
+    transition: width 0.2s ease-in-out;
+}
+
 
 
 @media only screen and (max-width: 992px) {

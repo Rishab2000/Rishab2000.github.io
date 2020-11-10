@@ -21,7 +21,7 @@ Modernizr.on('webp', function(result) {
       // supported
     } else {
       console.log('webp not supported');
-      $('.title_image').css('background-image', 'url("' + '../../images/1920/chiral2.png' + '")');
+      $('.title_image').css('background-image', 'url("' + '../../images/1920/chiral2_1.png' + '")');
       // not-supported
     }
   });  

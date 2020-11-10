@@ -86,7 +86,7 @@ Modernizr.on('webp', function(result) {
       // supported
     } else {
       console.log('webp not supported');
-      $('.title_image').css('background-image', 'url("' + '../../images/1920/sdplus_mockup.png' + '")');
+      $('.title_image').css('background-image', 'url("' + '../../images/1920/sdplus_mockup1.png' + '")');
       // not-supported
     }
   });  

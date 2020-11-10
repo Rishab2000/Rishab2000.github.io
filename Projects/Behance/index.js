@@ -21,7 +21,7 @@ Modernizr.on('webp', function(result) {
       // supported
     } else {
       console.log('webp not supported');
-      $('.title_image').css('background-image', 'url("' + '../../images/1920/behance.png' + '")');
+      $('.title_image').css('background-image', 'url("' + '../../images/1920/behance1.png' + '")');
       // not-supported
     }
   });  

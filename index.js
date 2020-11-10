@@ -24,10 +24,10 @@ Modernizr.on('webp', function(result) {
     // supported
   } else {
     console.log('webp not supported');
-    $('.first').css('background-image', 'url("' + 'images/1920/sdplus_mockup.png' + '")');
-    $('.second').css('background-image', 'url("' + 'images/1920/chiral2.png' + '")');
+    $('.first').css('background-image', 'url("' + 'images/1920/sdplus_mockup1.png' + '")');
+    $('.second').css('background-image', 'url("' + 'images/1920/chiral2_1.png' + '")');
     $('.third').css('background-image', 'url("' + 'images/1920/CSS_Challenges_Portfolio.svg' + '")');
-    $('.fourth').css('background-image', 'url("' + 'images/1920/behance.png' + '")');
+    $('.fourth').css('background-image', 'url("' + 'images/1920/behance1.png' + '")');
     // not-supported
   }
 });  

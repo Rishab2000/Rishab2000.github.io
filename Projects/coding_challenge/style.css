@@ -245,7 +245,7 @@ iframe {
     position: relative;
     margin: 0 auto 2rem auto;
     padding-left: 5%;
-    max-width: 80%;
+    max-width: 960px;
     height: fit-content;
 }
 

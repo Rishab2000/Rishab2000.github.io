@@ -12,3 +12,22 @@ function menuSlide() {
 $(".nav-icon3").on("click", function () {
   menuSlide();
 });
+
+
+Modernizr.on('webp', function(result) {
+  if (result) {
+    console.log('webp supported');
+    $('.first').css('background-image', 'url("' + 'images/1920/sdplus_mockup.webp' + '")');
+    $('.second').css('background-image', 'url("' + 'images/1920/chiral2.webp' + '")');
+    $('.third').css('background-image', 'url("' + 'images/1920/CSS_Challenges_Portfolio.svg' + '")');
+    $('.fourth').css('background-image', 'url("' + 'images/1920/behance.webp' + '")');
+    // supported
+  } else {
+    console.log('webp not supported');
+    $('.first').css('background-image', 'url("' + 'images/1920/sdplus_mockup.png' + '")');
+    $('.second').css('background-image', 'url("' + 'images/1920/chiral2.png' + '")');
+    $('.third').css('background-image', 'url("' + 'images/1920/CSS_Challenges_Portfolio.svg' + '")');
+    $('.fourth').css('background-image', 'url("' + 'images/1920/behance.png' + '")');
+    // not-supported
+  }
+});  

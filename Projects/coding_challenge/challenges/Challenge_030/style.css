@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 1px;
+  box-sizing: border-box;
+  margin: -1px 0px 0px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "avenir-roman";
+  src: url(/Fonts/Avenir/Avenir-Roman.ttf);
+}
+
+.caption {
+  font-family: "avenir-roman", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.card {
+  position: relative;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 0.6rem;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 15rem;
+  height: 5rem;
+  background-color: #ffffff;
+  border-radius: 3rem;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.mover {
+  position: absolute;
+  top: 37%;
+  left: 30%;
+  margin-top: -1.25rem;
+  margin-left: 0;
+  height: 3.8rem;
+  width: 10rem;
+  border-radius: 3rem;
+  background-color: #e1306c;
+}
+
+.left,
+.right {
+  position: absolute;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  fill: #ffffff;
+  left: 10%;
+}
+
+.right {
+  right: 14%;
+  fill: #ffffff;
+}
+
+.profile,
+.work {
+  height: 1.8rem;
+  width: 1.8rem;
+  margin-right: 1rem;
+}
+
+.hide-text-right {
+  right: -25%;
+  color: #ffffff00;
+  fill: #e1306c;
+}
+
+.hide-text-left {
+  left: 10%;
+  color: #ffffff00;
+  fill: #e1306c;
+}
+
+.click-left {
+  animation: click-left 0.3s linear forwards;
+}
+
+.click-right {
+  animation: click-right 0.3s linear forwards;
+}
+
+@keyframes click-left {
+  0% {
+    margin-left: 0rem;
+  }
+  50% {
+    margin-left: 0.5rem;
+    width: 5rem;
+  }
+  100% {
+    margin-left: -3.5rem;
+    width: 10rem;
+  }
+}
+
+@keyframes click-right {
+  0% {
+    margin-left: -3.5rem;
+    width: 10rem;
+  }
+  50% {
+    margin-left: 0.5rem;
+    width: 5rem;
+  }
+  100% {
+    margin-left: 0rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .card {
+    width: 15rem;
+    height: 15rem;
+  }
+}

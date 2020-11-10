@@ -1,0 +1,1000 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --title-colour: rgb(44, 44, 46);
+    --desc-colour: #2c2c2e;
+    --link-colour: #be203d;
+    --bg-colour: rgb(242, 242, 247);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding-top: 1px;
+    margin: -1px 0 0 0;
+    box-sizing: border-box;
+    background: var(--bg-colour);
+}
+
+@font-face {
+    font-family: "avenir-roman";
+    src: url(/Fonts/Avenir/Avenir-Roman.ttf);
+}
+
+@font-face {
+    font-family: "avenir-book";
+    src: url(/Fonts/Avenir/Avenir-Book.ttf);
+}
+
+@font-face {
+    font-family: "avenir-medium";
+    src: url(/Fonts/Avenir/Avenir-Medium.ttf);
+}
+
+@font-face {
+    font-family: "avenir-bold";
+    src: url(/Fonts/Avenir/Avenir-Heavy.ttf);
+}
+
+@font-face {
+    font-family: "avenir-black";
+    src: url(/Fonts/Avenir/Avenir-Black.ttf);
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:hover {
+    color: var(--link-colour) !important;
+}
+
+li {
+    margin-left: 2.5%;
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    margin: 10% auto 2% auto;
+    padding-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-top: 1px solid rgba(8, 8, 8, 0.14);
+}
+
+div {
+    cursor: default;
+}
+
+hr {
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    margin-left: -40%;
+    border-width: 0px;
+    border-top: 1px solid rgb(24, 50, 119, 0.07);
+
+}
+
+iframe {
+    border: unset;
+    border-radius: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+.h1 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1.1em + 1vw);
+    color: var(--title-colour);
+}
+
+.h2 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(1em + 0.5vw);
+    color: var(--title-colour);
+}
+
+.h3 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.7em + 1vw);
+    color: var(--title-colour);
+}
+
+.h4 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.7em + 1vw);
+    letter-spacing: 0.03rem;
+    color: var(--title-colour);
+}
+
+.h5 {
+    font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.5em + 1vw);
+    letter-spacing: 0.03rem;
+    color: var(--title-colour);
+}
+
+.h6 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.2em + 1vw);
+    line-height: 1.2em;
+    letter-spacing: 0.03rem;
+    color: var(--title-colour);
+}
+
+.sh1 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.4em + 1vw);
+    letter-spacing: 0.03rem;
+    color: var(--desc-colour);
+}
+
+.b1 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: calc(0.3em + 1vw);
+    line-height: 1.5;
+    color: var(--desc-colour);
+}
+
+.b2 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: calc(0.2em + 1vw);
+    color: var(--desc-colour);
+}
+
+
+.b3 {
+    font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.5px;
+    font-size: calc(0.15em + 1vw);
+    color: var(--desc-colour);
+}
+
+.caption {
+    font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.05em + 1vw);
+    color: var(--desc-colour);
+}
+
+.caption2 {
+    font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    font-size: calc(0.09em + 1vw);
+    color: rgb(44, 44, 46, 0.78);
+}
+
+.header_container {
+    background: linear-gradient(315deg, hsla(243, 60%, 60%, 1) 0%, hsla(349, 100%, 59%, 1) 50%, hsla(244, 52%, 94%, 1) 100%);
+
+    background: -moz-linear-gradient(315deg, hsla(243, 60%, 60%, 1) 0%, hsla(349, 100%, 59%, 1) 50%, hsla(244, 52%, 94%, 1) 100%);
+
+    background: -webkit-linear-gradient(315deg, hsla(243, 60%, 60%, 1) 0%, hsla(349, 100%, 59%, 1) 50%, hsla(244, 52%, 94%, 1) 100%);
+}
+
+.header {
+    width: 80%;
+    padding-top: 7%;
+    margin: 0 auto 0 auto;
+    height: max-content;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_container .h1 {
+    color: rgb(242, 242, 247, 0.78);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav_container .h2 {
+    color: rgb(242, 242, 247, 0.78);
+}
+
+/* color: #b2ebf2; */
+
+.nav_items {
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    margin: 0.6% 0 0 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.link_items {
+    padding-left: 3rem;
+}
+
+.mobile_nav {
+    display: none;
+}
+
+.project_name {
+    padding: 7% 0 3% 0;
+    color: #ffffff;
+}
+
+.project_duration {
+    padding-bottom: 8%;
+    color: #ffffffbd;
+}
+
+.title_image {
+    background: url(../../images/1920/CSS_Challenges_Portfolio.svg);
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* *******************Description Styles project explainations***************************** */
+
+.desc_container {
+    position: relative;
+    margin: 0 auto 2rem auto;
+    padding-left: 5%;
+    width: 80%;
+    height: fit-content;
+}
+
+.desc_title {
+    padding-top: 10%;
+}
+
+.desc {
+
+    padding: 0 40% 0 0;
+}
+
+/* *******************Main***************************** */
+
+.bck_container {
+    width: 100%;
+    padding: 4rem 0;
+    background-color: rgb(98, 92, 214, 0.78);
+}
+
+.desc_container.main {
+    height: 100%;
+    padding: 0 5% 4rem 5%;
+    background-color: rgb(242, 242, 247);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.14);
+}
+
+.container_left,
+.container_right {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_right {
+    align-items: flex-end;
+}
+
+.container_left.special {
+    margin-top: 10%;
+}
+
+.challenge {
+    height: 28rem;
+    width: 28rem;
+}
+
+.challenge.full {
+    margin-top: 5%;
+    height: 43.5rem;
+    width: 100%;
+}
+
+.challenge_container_left,
+.challenge_container_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.challenge_container_right {
+    flex-direction: row-reverse;
+}
+
+
+
+.desc.challenge_left,
+.desc.challenge_right {
+    margin: 5% 0 0 10%;
+    padding: 0;
+    width: 40%;
+    height: fit-content;
+}
+
+.desc.challenge_left.special {
+    margin: 5% 0 0 5%;
+}
+
+.desc.challenge_right {
+    margin: 5% 10% 0 5%;
+}
+
+.space {
+    margin: 1rem 0 0 0;
+}
+
+
+@media only screen and (max-width: 992px) {
+    p {
+        margin: 0em;
+    }
+
+    .h1 {
+        font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(1em + 1vw);
+        color: var(--title-colour);
+    }
+
+    .h2 {
+        font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.6em + 1vw);
+        color: var(--title-colour);
+    }
+
+    .h3 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.8em + 1vw);
+        color: var(--title-colour);
+    }
+
+    .h4 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(1em + 1vw);
+        font-weight: 600;
+        line-height: 1.2em;
+        letter-spacing: 0.03rem;
+        color: var(--title-colour);
+    }
+
+    .h5 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.5em + 1vw);
+        font-weight: 600;
+        line-height: 1.2em;
+        letter-spacing: 0.03rem;
+        color: var(--title-colour);
+    }
+
+    .h6 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.1em + 1vw);
+        font-weight: 600;
+        line-height: 1.2em;
+        letter-spacing: 0.03rem;
+        color: var(--title-colour);
+    }
+
+    .sh1 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.7em + 1vw);
+        line-height: 1.5rem;
+        letter-spacing: 0.03rem;
+        color: var(--desc-colour);
+    }
+
+    .b1 {
+        font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.4em + 1vw);
+        line-height: 1.6em;
+        color: var(--desc-colour);
+    }
+
+    .b2 {
+        font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        line-height: 1.6em;
+        font-size: calc(0.4em + 1vw);
+        color: var(--desc-colour);
+    }
+
+    .b3 {
+        font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+        letter-spacing: 0.5px;
+        font-size: calc(0.25em + 1vw);
+        color: var(--desc-colour);
+    }
+
+    .caption {
+        font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+        line-height: 1.6em;
+        font-size: calc(0.3em + 1vw);
+        color: var(--desc-colour);
+    }
+
+    .caption2 {
+        font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+        line-height: 1.6em;
+        font-size: calc(0.3em + 1vw);
+        color: rgb(44, 44, 46, 0.38);
+    }
+
+    .button1 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.2em + 1vw);
+    }
+
+    /* *******************Description Styles project explainations***************************** */
+
+    .project_name {
+        padding: 7% 0 3% 0;
+        color: #ffffff;
+    }
+
+    .project_duration {
+        padding-bottom: 8%;
+        color: #ffffffbd;
+    }
+
+    .title_image {
+        width: 100%;
+        height: calc(30em + 3vw);
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* *******************Description Styles project explainations***************************** */
+
+    .desc_container {
+        position: relative;
+        width: 80%;
+        height: fit-content;
+    }
+
+    .desc_title {
+        padding-top: 10%;
+    }
+
+    .desc {
+        display: block;
+        padding: 2% 20% 0 0;
+    }
+
+    /* *******************Main***************************** */
+
+
+    .bck_container {
+        width: 100%;
+        padding: 4rem 0;
+        background-color: rgb(98, 92, 214, 0.78);
+    }
+
+    .desc_container.main {
+        height: 100%;
+        padding: 0 5% 4rem 5%;
+        background-color: rgb(242, 242, 247);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.14);
+    }
+
+    .container_left,
+    .container_right {
+        margin-top: 5%;
+        margin-bottom: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_right {
+        align-items: center;
+    }
+
+    .container_left.special {
+        margin-top: 5%;
+    }
+
+    .challenge {
+        height: 28rem;
+        width: 28rem;
+        margin-bottom: 5%;
+    }
+
+    .challenge.full {
+        margin-top: 5%;
+        height: 35rem;
+        width: 100%;
+    }
+
+    .challenge_container_left,
+    .challenge_container_right {
+        width: min-content;
+        align-items: unset;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .challenge_container.special {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .desc.challenge_left,
+    .desc.challenge_right {
+        margin: 5% 0 0 0%;
+        width: 80%;
+        height: fit-content;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        margin: 10% auto 2% auto;
+        padding-top: 5%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        border-top: 1px solid rgba(8, 8, 8, 0.14);
+    }
+
+    .intro_text1 {
+        margin-top: 0;
+    }
+
+    .nav-icon3 {
+        z-index: 200;
+        margin-top: 1.4%;
+        width: 1.6rem;
+        height: 1rem;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .nav-icon3-bar {
+        background: white;
+        z-index: 200;
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+
+    .nav-icon3-black {
+        background-color: var(--title-colour);
+    }
+
+    .nav-icon3 span:nth-child(1) {
+        top: 0px;
+    }
+
+    .nav-icon3 span:nth-child(2),
+    .nav-icon3 span:nth-child(3) {
+        top: 7px;
+    }
+
+    .nav-icon3 span:nth-child(4) {
+        top: 14px;
+    }
+
+    .nav-icon3.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .nav-icon3.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .nav-icon3.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .nav-icon3.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .nav_items {
+        position: relative;
+        display: none;
+    }
+
+    .mobile_nav {
+        display: flex;
+        flex-wrap: wrap;
+        position: fixed;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--bg-colour);
+        transition: opacity 0.5s;
+        opacity: 0;
+    }
+
+    .show {
+        z-index: 100;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .hide {
+        visibility: hidden;
+    }
+
+    .mobile_nav_items {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        margin: auto;
+    }
+
+    .mobile_items {
+        padding: 10% 0 0 0;
+    }
+
+    /* footer styles */
+
+    .social-icons {
+        height: 1.3rem;
+    }
+
+    .social-links {
+        margin-top: 5%;
+        width: 40%;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+
+    .h1 {
+        font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(1.1em + 1vw);
+        color: var(--title-colour);
+    }
+
+    .h2 {
+        font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(1.2em + 1vw);
+        color: var(--title-colour);
+    }
+
+    .h3 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.9em + 1vw);
+        color: var(--title-colour);
+    }
+
+    .h4 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.9em + 1vw);
+        font-weight: 600;
+        line-height: 1.2em;
+        letter-spacing: 0.03rem;
+        color: var(--title-colour);
+    }
+
+    .h5 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.7em + 1vw);
+        font-weight: 600;
+        line-height: 1.5em;
+        letter-spacing: 0.03rem;
+        color: var(--title-colour);
+    }
+
+    .h6 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.4em + 1vw);
+        font-weight: 600;
+        line-height: 1.2em;
+        letter-spacing: 0.03rem;
+        color: var(--title-colour);
+    }
+
+    .sh1 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.9em + 1vw);
+        margin-bottom: 2%;
+        line-height: 1.6rem;
+        letter-spacing: 0.03rem;
+        color: var(--desc-colour);
+    }
+
+    .b1 {
+        font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.8em + 1vw);
+        line-height: 1.4em;
+        color: var(--desc-colour);
+    }
+
+    .b2 {
+        font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        line-height: 1.6em;
+        font-size: calc(0.7em + 1vw);
+        color: var(--desc-colour);
+    }
+
+    .b3 {
+        font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+        letter-spacing: 0.5px;
+        font-size: calc(0.4em + 1vw);
+        color: var(--desc-colour);
+    }
+
+    .caption {
+        font-family: "avenir-book", "Open Sans", Helvetica, Arial, sans-serif;
+        line-height: 1.6em;
+        font-size: calc(0.3em + 1vw);
+        color: var(--desc-colour);
+    }
+
+    .caption2 {
+        font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
+        line-height: 1.6em;
+        font-size: calc(0.3em + 1vw);
+        color: rgb(44, 44, 46, 0.38);
+    }
+
+    .button1 {
+        font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
+        font-size: calc(0.2em + 1vw);
+    }
+
+
+    .nav-icon3 {
+        z-index: 200;
+        margin-top: 1.4%;
+        width: 1.6rem;
+        height: 1rem;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.5s ease-in-out;
+        -moz-transition: 0.5s ease-in-out;
+        -o-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .nav-icon3-bar {
+        z-index: 200;
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        background: var(--bg-colour);
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transition: background-color 0.5s linear;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+
+    .nav-icon3-black {
+        background-color: var(--title-colour);
+    }
+
+    .nav-icon3 span:nth-child(1) {
+        top: 0px;
+    }
+
+    .nav-icon3 span:nth-child(2),
+    .nav-icon3 span:nth-child(3) {
+        top: 7px;
+    }
+
+    .nav-icon3 span:nth-child(4) {
+        top: 14px;
+    }
+
+    .nav-icon3.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .nav-icon3.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .nav-icon3.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .nav-icon3.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+    .nav_items {
+        position: unset;
+        display: none;
+    }
+
+    .mobile_nav {
+        text-align: center;
+    }
+
+    .mobile_nav_items {
+        list-style-type: none;
+        padding: 0;
+        margin: auto;
+    }
+
+    .mobile_items {
+        padding: 10% 0;
+    }
+
+    /* ********************************** Header Styles ************************************************************ */
+    .project_name {
+        padding: 0;
+        margin: 10% 0 8% 0;
+        color: #ffffff;
+    }
+
+    .project_duration {
+        padding-bottom: 7%;
+        color: #ffffffbd;
+    }
+
+    .title_image {
+        width: 100%;
+        height: calc(21em + 3vw);
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* *******************Description Styles project explainations***************************** */
+
+    .desc_container {
+        position: relative;
+        margin: 0 auto 3rem auto;
+        width: 80%;
+        height: fit-content;
+    }
+
+    .desc_title {
+        padding-top: 10%;
+    }
+
+    .desc {
+        display: block;
+        margin-top: 2%;
+        padding: 2% 0 0 0;
+    }
+
+
+    /* *******************Main***************************** */
+
+
+    .bck_container {
+        width: 100%;
+        padding: 4rem 0;
+        background-color: rgb(98, 92, 214, 0.78);
+    }
+
+    .desc_container.main {
+        height: 100%;
+        padding: 0 5% 4rem 5%;
+        background-color: rgb(242, 242, 247);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.14);
+    }
+
+    .container_left,
+    .container_right {
+        margin-top: 10%;
+        margin-bottom: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_right {
+        align-items: center;
+    }
+
+    .container_left.special {
+        margin-top: 5%;
+    }
+
+    .challenge {
+        height: 15rem;
+        width: 15rem;
+        margin-bottom: 5%;
+    }
+
+    .challenge.full {
+        margin-top: 5%;
+        height: 35rem;
+        width: 100%;
+    }
+
+    .challenge_container_left,
+    .challenge_container_right {
+        width: min-content;
+        align-items: unset;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .challenge_container.special {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .desc.challenge_left,
+    .desc.challenge_right {
+        margin: 5% 0 0 0%;
+        width: 100%;
+        height: fit-content;
+    }
+
+    /* footer styles */
+
+    .social-links {
+        margin-top: 10%;
+        width: 50%;
+    }
+}

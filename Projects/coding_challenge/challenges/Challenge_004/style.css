@@ -93,6 +93,23 @@ button {
   animation-fill-mode: forwards;
 }
 
+@media only screen and (max-width: 15rem) {
+
+  .card {
+    width: 15rem;
+    height:15rem;
+  }
+
+  .finish {
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 50rem;
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+
 @keyframes finish {
   0% {
     width: 14rem;
@@ -158,19 +175,3 @@ button {
 }
 
 
-@media only screen and (max-width: 576px) {
-
-  .card {
-    width: 15rem;
-    height:15rem;
-  }
-
-  .finish {
-    width: 12rem;
-    height: 2.5rem;
-    border-radius: 50rem;
-    background: transparent;
-    color: #ffffff;
-    border-color: #ffffff;
-  }
-}

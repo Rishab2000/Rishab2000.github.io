@@ -78,3 +78,15 @@ $(".more_button").on('click', function () {
     }
 
 })
+
+Modernizr.on('webp', function(result) {
+    if (result) {
+      console.log('webp supported');
+      $('.title_image').css('background-image', 'url("' + '../../images/1920/sdplus_mockup.webp' + '")');
+      // supported
+    } else {
+      console.log('webp not supported');
+      $('.title_image').css('background-image', 'url("' + '../../images/1920/sdplus_mockup.png' + '")');
+      // not-supported
+    }
+  });  

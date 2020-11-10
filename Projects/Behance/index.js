@@ -13,3 +13,15 @@ function menuSlide() {
 $(".nav-icon3").on("click", function () {
  menuSlide();
 })
+
+Modernizr.on('webp', function(result) {
+    if (result) {
+      console.log('webp supported');
+      $('.title_image').css('background-image', 'url("' + '../../images/1920/behance.webp' + '")');
+      // supported
+    } else {
+      console.log('webp not supported');
+      $('.title_image').css('background-image', 'url("' + '../../images/1920/behance.png' + '")');
+      // not-supported
+    }
+  });  

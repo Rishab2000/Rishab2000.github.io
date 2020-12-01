@@ -180,7 +180,8 @@ p {
 .caption {
     font-family: "avenir-roman", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.05em + 1vw);
-    color: rgb(44, 44, 46, 0.38);
+    color: rgb(44, 44, 46, 0.28);
+    margin-bottom: 0.2rem;
 }
 
 .header {

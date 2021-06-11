@@ -3,7 +3,7 @@ $(document).ready(function () {
     $(this).toggleClass("open");
   });
 });
-
+ 
 function menuSlide() {
   $(".mobile_nav").toggleClass("show");
   $(".nav-icon3-bar").toggleClass("nav-icon3-black");
@@ -18,9 +18,9 @@ Modernizr.on('webp', function(result) {
   if (result) {
     console.log('webp supported');
     $('.first').css('background-image', 'url("' + 'images/1920/sdplus_mockup.webp' + '")');
-    $('.second').css('background-image', 'url("' + 'images/1920/chiral2.webp' + '")');
+    $('.second').css('background-image', 'url("' + 'images/1920/sdplus_mockup.webp' + '")');
     $('.third').css('background-image', 'url("' + 'images/1920/CSS_Challenges_Portfolio.svg' + '")');
-    $('.fourth').css('background-image', 'url("' + 'images/1920/behance.webp' + '")');
+    $('.fourth').css('background-image', 'url("' + 'images/1920/chiral2.webp' + '")');
     // supported
   } else {
     console.log('webp not supported');

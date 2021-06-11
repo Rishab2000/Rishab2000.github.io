@@ -308,7 +308,7 @@ p {
   height: calc(32rem + 10vw);
   overflow: hidden;
 }
-
+ 
 .first {
   /* background: url("images/1920/sdplus_mockup1.png"); */
   background-size: cover;
@@ -320,10 +320,10 @@ p {
 
 .second {
   /* background: url("images/1920/chiral2\(1\).png"); */
-
-  background-size: cover;
+/* background-color: khaki; */
+  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: 51% 0;
+  background-position: 50% 80%;
 
   transform: scale(1.2);
   width: 100%;

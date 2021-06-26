@@ -1,6 +1,6 @@
 /* css rules
 selectors ==== for example H1{}
-decleration block ==== {} 
+decleration block ==== {}
 declaration
 property: value;
 
@@ -19,9 +19,9 @@ LAST RULE AND SPECIFICITY applies the last style and ignores the first one
 
 Universal selector ===== * (least amoint specificity)
 
-Relative percentages depend on the parent element  
+Relative percentages depend on the parent element
 
-em values = relative and depends on the parent 
+em values = relative and depends on the parent
 
 1em = 16px (default browser styles)
 
@@ -34,7 +34,7 @@ vw = width = percentage of the screen
 
 typograpgy - line-height, letter-spacing, text-transform, word-spacing, text-decoration
 
-Colours 
+Colours
 #ff0047
 #ff4674
 
@@ -48,7 +48,7 @@ h3 0.7em + 1vw
   --desc-colour: rgb(44, 44, 46, 0.83);
   --link-hover-colour: #be203d;
   --red: #ff2d55;
-  --bg-colour: rgb(242, 242, 247);
+  --bg-colour:#F3F6FB;
 }
 
 body {
@@ -803,7 +803,6 @@ p {
   }
 
   .third {
-
     /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;
@@ -858,7 +857,6 @@ p {
 }
 
 @media only screen and (max-width: 576px) {
-
   .h1 {
     font-family: "avenir-bold", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(1.3em + 1vw);
@@ -941,7 +939,6 @@ p {
     font-family: "avenir-medium", "Open Sans", Helvetica, Arial, sans-serif;
     font-size: calc(0.4em + 1vw);
   }
-
 
   .nav-icon3 {
     z-index: 200;
@@ -1136,7 +1133,6 @@ p {
   }
 
   .third {
-
     /* margin-top: 13%; */
     background-size: cover;
     background-repeat: no-repeat;

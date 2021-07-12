@@ -312,7 +312,7 @@ p {
 .first {
   /* background: url("images/1920/sdplus_mockup1.png"); */
   background-size: cover;
-  background-color: khaki;
+  /* background-color: khaki; */
   background-position: 51% 0px;
   background-repeat: no-repeat;
   width: 100%;
@@ -320,10 +320,8 @@ p {
 }
 
 .second {
-  /* background: url("images/1920/chiral2\(1\).png"); */
-
-  background-size: 90%;
-
+background-color: #be203d;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 100%;

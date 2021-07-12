@@ -17,7 +17,7 @@ $(".nav-icon3").on("click", function () {
 Modernizr.on('webp', function (result) {
   if (result) {
     console.log('webp supported');
-    $('.first').css('background-image', 'url("' + 'images/1920/mockup_test.webp' + '")');
+    $('.first').css('background-image', 'url("' + 'images/1920/IBM.webp' + '")');
     $('.second').css('background-image', 'url("' + 'images/1920/mockup.webp' + '")');
     $('.third').css('background-image', 'url("' + 'images/1920/CSS_Challenges_Portfolio.svg' + '")');
     $('.fourth').css('background-image', 'url("' + 'images/1920/chiral2.webp' + '")');
